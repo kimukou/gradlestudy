@@ -1,0 +1,47 @@
+buildscript {
+    repositories {
+        mavenRepo(urls: 'http://jvoegele.com/maven2/')
+    }
+    dependencies {
+        classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.7'
+    }
+}
+apply plugin: 'android'
+repositories {
+    flatDir(dirs: file("$rootDir/libs"))
+    mavenCentral()
+}
+
+// プロジェクトのバージョンを設定
+version = "x.y.z"
+
+
+
+//ソース位置
+[compileJava, compileTestJava]*.options.collect {options -> options.encoding = 'UTF-8'}
+sourceSets.main.java.srcDirs += ['src']
+
+
+// 署名設定
+androidPackage {
+    keyStore = System.getProperty('user.home')+"/.android/debug.keystore"
+    keyAlias = 'androiddebugkey'
+    // パスワードが設定されてなければ、コマンド・プロンプトで入力を求められる
+    keyStorePassword = "android"
+    keyAliasPassword = "android"
+}
+
+// プロジェクトのプロパティをリソースのフィルタリング（プロパティの解決）に使うヨ
+processResources {
+    expand (project.properties)
+}
+
+// デバッグ・ビルド設定
+task configureDebug << {
+    jar.classifier = "debug"
+}
+
+// リリース・ビルド設定
+task configureRelease << {
+    proguard.enabled = false//true
+}
