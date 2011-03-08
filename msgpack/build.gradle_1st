@@ -1,0 +1,42 @@
+defaultTasks 'msgpacktest2'
+
+buildscript {
+	repositories {
+	    //mavenCentral()
+			mavenRepo(urls:'http://msgpack.org/maven2/') {
+				dependencies {
+					classpath("org.msgpack:msgpack:0.5.1-devel")
+				}
+			}
+	}
+}
+
+
+//
+// refarence http://d.hatena.ne.jp/viver/20101025/p1
+// Compare Gist: https://gist.github.com/850562
+//
+
+import org.msgpack.MessagePack
+import static org.msgpack.Templates.*
+
+task msgpacktest2 {
+		// シリアライズするオブジェクトを作成
+    List<String> src = new ArrayList()
+    src.add("msgpack")
+    src.add("kumofs")
+    src.add("viver")
+
+    // バイト列にシリアライズ
+    byte[] raw = MessagePack.pack(src)
+		println "raw=$raw"
+
+    // 方法1: テンプレートを指定して直接デシリアライズ
+    List<String> dst1 = (List<String>)MessagePack.unpack(raw, tList(TString))
+
+    // 方法2: いったん動的型付けオブジェクトにデシリアライズしてから型変換
+    def  dynamic = MessagePack.unpack(raw)
+    List<String> dst2 = (List<String>)dynamic.convert(tList(TString))
+		println "dst2=${dst2.dump()}"
+}
+

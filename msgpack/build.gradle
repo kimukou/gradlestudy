@@ -1,0 +1,79 @@
+//defaultTasks 'msgpacktest2'
+
+apply plugin: 'groovy'
+[compileGroovy, compileTestGroovy]*.options.collect {options -> options.encoding = 'UTF-8'}
+
+
+buildscript {
+	repositories {
+	    mavenCentral()
+			mavenRepo(urls:'http://msgpack.org/maven2/') {
+				dependencies {
+					classpath("org.msgpack:msgpack:0.5.1-devel")
+				}
+			}
+	}
+}
+
+
+repositories {
+    mavenCentral()
+    mavenRepo urls: [ "http://msgpack.org/maven2/",
+											"http://download.java.net/maven/2/",
+                      "http://repository.jboss.org/maven2/",
+                      "http://repository.jboss.org/nexus/content/groups/public-jboss/"]
+}
+
+dependencies {
+    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.5'
+    groovy group: 'commons-cli', name : 'commons-cli', version: '1.2'
+
+    groovy group: 'org.msgpack', name: 'msgpack', version: '0.5.1-devel'
+
+		//■need 1.5.1 upper place into http://repository.jboss.org/maven2/
+		groovy 'org.slf4j:slf4j-api:1.5.8'
+		groovy 'org.slf4j:slf4j-log4j12:1.5.8'
+		groovy 'javassist:javassist:3.12.1.GA'
+		testCompile 'junit:junit:4.8.1'
+}
+
+//
+// refarence http://d.hatena.ne.jp/viver/20101025/p1
+// Compare Gist: https://gist.github.com/850562
+//
+
+import org.msgpack.MessagePack
+import static org.msgpack.Templates.*
+
+task msgpacktest2 {
+		// シリアライズするオブジェクトを作成
+    List<String> src = new ArrayList()
+    src.add("msgpack")
+    src.add("kumofs")
+    src.add("viver")
+
+    // バイト列にシリアライズ
+    byte[] raw = MessagePack.pack(src)
+		println "raw=$raw"
+
+    // 方法1: テンプレートを指定して直接デシリアライズ
+    List<String> dst1 = (List<String>)MessagePack.unpack(raw, tList(TString))
+
+    // 方法2: いったん動的型付けオブジェクトにデシリアライズしてから型変換
+    def  dynamic = MessagePack.unpack(raw)
+    List<String> dst2 = (List<String>)dynamic.convert(tList(TString))
+		println "dst2=${dst2.dump()}"
+}
+
+
+//
+// 以降は
+// executable jar をつくる場合に必要な記述が必要です
+//
+
+jar {
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+}
+
+manifest.mainAttributes("Main-Class" : "main")
+
