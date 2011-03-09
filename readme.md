@@ -26,5 +26,5 @@ need enviroments
 		run.bat
 3. msgpack-rpc
 		a)sv_run.bat first
-		b)cl_run.bat first
+		b)cl_run.bat second
 
