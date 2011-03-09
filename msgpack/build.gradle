@@ -7,11 +7,10 @@ apply plugin: 'groovy'
 buildscript {
 	repositories {
 	    mavenCentral()
-			mavenRepo(urls:'http://msgpack.org/maven2/') {
-				dependencies {
-					classpath("org.msgpack:msgpack:0.5.1-devel")
-				}
-			}
+			mavenRepo urls:'http://msgpack.org/maven2/'
+	}
+	dependencies {
+		classpath("org.msgpack:msgpack:0.5.1-devel")
 	}
 }
 
@@ -25,7 +24,7 @@ repositories {
 }
 
 dependencies {
-    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.5'
+    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.8'
     groovy group: 'commons-cli', name : 'commons-cli', version: '1.2'
 
     groovy group: 'org.msgpack', name: 'msgpack', version: '0.5.1-devel'

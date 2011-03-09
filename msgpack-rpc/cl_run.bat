@@ -5,9 +5,4 @@ set JAVA_HOME=c:\opt\jdk
 set PATH=%GROOVY_HOME%/bin;%GRADLE_HOME%/bin;%JAVA_HOME%/bin
 
 
-::call gradle clean jar
-call gradle jar
-
-echo "====jar running start =="
-java -jar build/libs/msgpack.jar
-echo "====jar running end =="
+call gradle -b cl_build.gradle
