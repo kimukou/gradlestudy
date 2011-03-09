@@ -6,10 +6,10 @@ import org.msgpack.annotation.Optional;
 // アノテーションを付ける
 @MessagePackMessage
 public class MyClass {
-    String str;
-    double num;
+    public String str;
+    public double num;
 
-		// new field
+    // new field
     @Optional
     public int flag = 0;
 }
