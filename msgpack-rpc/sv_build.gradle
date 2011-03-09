@@ -1,5 +1,9 @@
 defaultTasks 'TestServer'
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.0-milestone-1'
+}
+
 buildscript {
 	repositories {
 	    mavenCentral()
@@ -10,6 +14,7 @@ buildscript {
 
 	}
 	dependencies {
+/*
 		classpath "org.msgpack:msgpack-rpc:0.6.1-devel",
 							"org.msgpack:msgpack:0.5.1-devel",
 							"org.apache.mina:mina-core:2.0.1",
@@ -18,7 +23,8 @@ buildscript {
 							"org.jboss.netty:netty:3.2.1.Final",
 							"javassist:javassist:3.12.1.GA"
 							//"junit:junit:4.8.1"
-		//classpath("org.msgpack:msgpack-rpc:0.6.1-devel")
+*/
+		classpath("org.msgpack:msgpack-rpc:0.6.1-devel")
 		//classpath("org.msgpack:msgpack:0.5.1-devel")
 		//classpath("org.jboss.netty:netty:3.2.1.Final")
 	}

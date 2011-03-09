@@ -3,6 +3,9 @@
 apply plugin: 'groovy'
 [compileGroovy, compileTestGroovy]*.options.collect {options -> options.encoding = 'UTF-8'}
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.0-milestone-1'
+}
 
 buildscript {
 	repositories {
