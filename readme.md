@@ -1,7 +1,10 @@
 need enviroments 
+
+	jdk6u24
+	gradlew.bat or sh gradlew
+		or
+	jdk6u24
 	gradle milestorne 1 http://www.gradle.org/
-	groovy 1.7.8 Download zip: Binary Release http://groovy.codehaus.org/Download
-	jdku24
 
 
 1. HelloAndroid
@@ -25,6 +28,9 @@ need enviroments
 2. msgpack
 		run.bat
 3. msgpack-rpc
+		a)gradlew.bat -b sv_build.gradle
+		b)gradlew.bat -b cl_build.gradle
+				or
 		a)sv_run.bat first
 		b)cl_run.bat second
 

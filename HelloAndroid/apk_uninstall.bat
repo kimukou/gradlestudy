@@ -4,6 +4,5 @@ set ANDROID_HOME=D:/Tooldev/android-sdk-windows
 
 set PATH=%GRADLE_HOME%/bin;%JAVA_HOME%/bin;%ANDROID_HOME%/platform-tools;%ANDROID_HOME%/tools
 
-
 echo "need prepare 'android' command and emurator running"
-call gradle configureDebug androidInstall %1
+call gradle androidUnInstall %1
