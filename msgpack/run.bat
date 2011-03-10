@@ -5,7 +5,7 @@ set PATH=%GRADLE_HOME%/bin;%JAVA_HOME%/bin
 
 
 ::call gradle clean jar
-call gradle jar
+call gradle jar %*
 
 echo "====jar running start =="
 java -jar build/libs/msgpack.jar
