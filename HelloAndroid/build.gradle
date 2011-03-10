@@ -36,7 +36,8 @@ task hoge{
 
 // 署名設定
 androidPackage {
-    keyStore = System.getProperty('user.home')+"/.android/debug.keystore"
+    //keyStore = System.getProperty('user.home')+"/.android/debug.keystore"
+    keyStore = "${projectDir}/debug.keystore"
     keyAlias = 'androiddebugkey'
     // パスワードが設定されてなければ、コマンド・プロンプトで入力を求められる
     keyStorePassword = "android"
@@ -55,7 +56,7 @@ task configureDebug << {
 
 // リリース・ビルド設定
 task configureRelease << {
-    proguard.enabled = false//true
+    proguard.enabled = true
 }
 
 
