@@ -20,7 +20,7 @@ repositories {
 
 
 dependencies {
-    //groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.8'
+    //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.8'
 		compile group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
 		runtime group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
 }
@@ -68,6 +68,11 @@ androidPackage {
 // プロジェクトのプロパティをリソースのフィルタリング（プロパティの解決）に使うヨ
 processResources {
     expand (project.properties)
+}
+
+
+jar {
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
 // デバッグ・ビルド設定
