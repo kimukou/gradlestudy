@@ -1,0 +1,71 @@
+buildscript {
+    repositories {
+        mavenRepo(urls: 'http://jvoegele.com/maven2/')
+    }
+    dependencies {
+        classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.7'
+    }
+}
+apply plugin: 'android'
+repositories {
+    flatDir(dirs: file("$rootDir/libs"))
+    //mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.twitter4j', name: 'twitter4j-core', version: '2.1.8-SNAPSHOT'
+}
+
+// プロジェクトのバージョンを設定
+version = "x.y.z"
+
+
+
+//ソース位置
+[compileJava, compileTestJava]*.options.collect {options -> options.encoding = 'UTF-8'}
+sourceSets.main.java.srcDirs += ['src']
+
+ant.echo sourceSets.main.java.srcDirs
+/*
+task hoge{
+	def ANDROID_HOME=System.getenv()['ANDROID_HOME']
+	ant.echo  "ANDROID_HOME=$ANDROID_HOME"
+	//ant.exec(executable: "$ANDROID_HOME/tools/emulator", dir: ANDROID_HOME, output: "$rootDir/svnlist.log" , spawn:'true') {
+	ant.exec(executable: "emulator", dir: ".", output: "svnlist.log" , spawn:'true') {
+		arg(line: "-avd myAVD")
+	}
+}
+*/
+
+
+// 署名設定
+androidPackage {
+    //keyStore = System.getProperty('user.home')+"/.android/debug.keystore"
+    keyStore = "${projectDir}/debug.keystore"
+    keyAlias = 'androiddebugkey'
+    // パスワードが設定されてなければ、コマンド・プロンプトで入力を求められる
+    keyStorePassword = "android"
+    keyAliasPassword = "android"
+}
+
+// プロジェクトのプロパティをリソースのフィルタリング（プロパティの解決）に使うヨ
+processResources {
+    expand (project.properties)
+}
+
+
+jar {
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+}
+
+// デバッグ・ビルド設定
+task configureDebug << {
+    jar.classifier = "debug"
+}
+
+// リリース・ビルド設定
+task configureRelease << {
+    proguard.enabled = true
+}
+
+
