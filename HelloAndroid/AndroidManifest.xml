@@ -12,4 +12,8 @@
             </intent-filter>
         </activity>
     </application>
+		<uses-sdk android:minSdkVersion="4"/>
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
 </manifest> 

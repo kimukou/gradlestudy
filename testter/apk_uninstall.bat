@@ -6,4 +6,4 @@ set PATH=%GRADLE_HOME%/bin;%JAVA_HOME%/bin;%ANDROID_HOME%/platform-tools;%ANDROI
 
 
 echo "need prepare 'android' command and emurator running"
-call gradle configureDebug androidInstall %1
+call gradle androidUnInstall %1
