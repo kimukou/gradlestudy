@@ -27,14 +27,15 @@ need enviroments
 
 1. HelloAndroid
 	gradle android plugin test
-	
+			https://github.com/jvoegele/gradle-android-plugin
+
 	■running
-	1)adb_lunch.bat
-		android emurator running
+	0-1	adb_lunch.bat
+			android emurator running
 	
-	2)apk_install.bat
-	3)apk_uninstall.bat
-		
+	0-2	apk_install.bat
+	0-3	apk_uninstall.bat
+
 ---------------------------------------------------------------------
 2. msgpack
 		run.bat
@@ -47,7 +48,8 @@ need enviroments
 
 ---------------------------------------------------------------------
 4. tester gradle setting
-		gradle android plugin test
+	gradle android plugin test
+			https://github.com/jvoegele/gradle-android-plugin
 
 		4.1 see https://sites.google.com/site/androidtestclub/testter
 				download GoogleCode
