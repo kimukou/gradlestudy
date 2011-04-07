@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="%%app-name%%" default="debug">
+<project name="Main" default="debug">
 
 
     <!-- The build.properties file can be created by you and is never touched
@@ -16,7 +16,7 @@
          Do not change them unless you really know what you are doing. -->
 
     <!-- Application Package Name -->
-    <property name="application-package" value="%%app-package%%" />
+    <property name="application-package" value="org.jggug.sample" />
 
     <!-- The intermediates directory, Eclipse uses "bin"
          for its own output, so we do the same. -->

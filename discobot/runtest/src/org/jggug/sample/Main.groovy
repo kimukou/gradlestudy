@@ -16,7 +16,7 @@ public class Main extends Activity{
         TextView tv = new TextView(this)
 
         def list = ["Welcome","to", "discobot."
-                , "\nAnd", "good", "luck", "with", "Main!", "日本語もOK。"]
+                , "\nAnd", "good", "luck", "with", "Main!", "\u8b4c\uff65\u8b5b\uff6c\u96b1\u69ed\uff42OK\u7e32"]
         
         def str = ""
         list.each {
