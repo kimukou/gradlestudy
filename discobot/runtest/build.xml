@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="Main" default="debug">
+<project name="%%app-name%%" default="debug">
 
 
     <!-- The build.properties file can be created by you and is never touched
@@ -16,7 +16,7 @@
          Do not change them unless you really know what you are doing. -->
 
     <!-- Application Package Name -->
-    <property name="application-package" value="org.jggug.sample" />
+    <property name="application-package" value="%%app-package%%" />
 
     <!-- The intermediates directory, Eclipse uses "bin"
          for its own output, so we do the same. -->
@@ -26,7 +26,7 @@
     <!-- No user servicable parts below. -->
 
     <property name="android-tools" value="${sdk-folder}/tools" />
-    <property name="android-platform" value="${sdk-folder}/platforms/android-4" />
+    <property name="android-platform" value="${sdk-folder}/platforms/${target-api}" />
     <property name="android-platform-tools" value="${android-platform}/tools" />
     <property name="android-framework" value="${android-platform}/framework.aidl" />
 
@@ -178,9 +178,9 @@
     <target name="dex" depends="compile">
         <echo>Converting compiled files and external libraries into ${outdir}/${dex-file}...</echo>
         <apply executable="${dx}" failonerror="true" parallel="true">
-            <!--<arg value="-JXmx512m" />-->
-	    			<arg value="--dex" />
-	    			<arg value="--no-locals"/>
+            <!--<arg value="-JXmx1024m" />-->
+	    <arg value="--dex" />
+	    <arg value="--no-locals"/>
             <arg value="--output=${intermediate-dex-ospath}" />
             <arg path="${outdir-classes-ospath}" />
             <fileset dir="${external-libs}" includes="*.jar"/>

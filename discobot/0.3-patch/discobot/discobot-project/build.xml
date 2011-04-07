@@ -115,7 +115,7 @@
     <condition property="adb" value="${android-tools}/adb.exe" else="${android-tools}/adb" >
         <os family="windows"/>
     </condition>
-    <condition property="dx" value="$android-platform-tools}/dx.bat" else="${android-platform-tools}/dx" >
+    <condition property="dx" value="${android-platform-tools}/dx.bat" else="${android-platform-tools}/dx" >
         <os family="windows"/>
     </condition>
     <condition property="apk-builder" value="${android-tools}/apkbuilder.bat" else="${android-tools}/apkbuilder" >
@@ -178,7 +178,7 @@
     <target name="dex" depends="compile">
         <echo>Converting compiled files and external libraries into ${outdir}/${dex-file}...</echo>
         <apply executable="${dx}" failonerror="true" parallel="true">
-            <arg value="-JXmx1024m" />
+            <!--<arg value="-JXmx1024m" />-->
 	    <arg value="--dex" />
 	    <arg value="--no-locals"/>
             <arg value="--output=${intermediate-dex-ospath}" />
