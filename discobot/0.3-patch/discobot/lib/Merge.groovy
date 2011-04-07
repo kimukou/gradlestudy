@@ -16,7 +16,9 @@ class Merge{
 		    copy:false,
 		    simulate:false,
 		    test:false,
-		    android_path:Util.getAndroidPath()]
+		    android_path:Util.getAndroidPath(),
+				target_api:Util.getTargetPath()			//2011/04/07 kimukou_26 add
+		]
 
         //This is the commandqueue the commands in this list
         //are executed only if no errors are detected
@@ -45,7 +47,7 @@ class Merge{
             commands << ["copydir",new File(config["groovy_src"]),new File(config["dest"])]
 
             //Copy the android jar
-	    def andJar  = Util.strToFile(config["android_path"] + "platforms/android-4/android.jar")
+	    def andJar  = Util.strToFile(config["android_path"] + "platforms/android-1.6/android.jar")
 	    def andDest = Util.strToFile(config["dest"] + "/target/lib/compile/android.jar")
             commands << ["copyAndroidJar",andJar ,andDest]
         }

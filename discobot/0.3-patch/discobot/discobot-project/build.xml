@@ -26,7 +26,7 @@
     <!-- No user servicable parts below. -->
 
     <property name="android-tools" value="${sdk-folder}/tools" />
-    <property name="android-platform" value="${sdk-folder}/platforms/android-4" />
+    <property name="android-platform" value="${sdk-folder}/platforms/${target-api}" />
     <property name="android-platform-tools" value="${android-platform}/tools" />
     <property name="android-framework" value="${android-platform}/framework.aidl" />
 

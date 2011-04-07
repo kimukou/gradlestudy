@@ -44,11 +44,9 @@ discobot source)
 
 
 edit setting)
-	edit lib/Merge.groovy
-	edit lib/Util.groovy
-	edit discobot-project/build.xml
-		android-1.5 => android-4
-
+	edit discobot/project.conf
+		android-folder:/opt/android-sdk-linux_x86
+		target-api:android-4
 
 ■compile)
 	sh ./package.sh
