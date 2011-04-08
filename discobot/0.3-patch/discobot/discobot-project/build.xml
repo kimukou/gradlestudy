@@ -165,11 +165,11 @@
     <!-- Compile this project's .java files into .class files. -->
     <target name="compile" depends="dirs, resource-src, aidl">
       <groovyc  srcdir="." destdir="${outdir-classes}"  encoding="ascii" >
-	    <javac target="1.6" debug="true"/>
-	    <classpath>
+      <javac target="1.6" debug="true"/>
+      <classpath>
                 <fileset dir="${external-libs}" includes="*.jar"/>
-		<pathelement path="${android-jar}"/>
-	    </classpath>
+    <pathelement path="${android-jar}"/>
+      </classpath>
 
       </groovyc>
     </target>
@@ -179,8 +179,8 @@
         <echo>Converting compiled files and external libraries into ${outdir}/${dex-file}...</echo>
         <apply executable="${dx}" failonerror="true" parallel="true">
             <!--<arg value="-JXmx1024m" />-->
-	    <arg value="--dex" />
-	    <arg value="--no-locals"/>
+      <arg value="--dex" />
+      <arg value="--no-locals"/>
             <arg value="--output=${intermediate-dex-ospath}" />
             <arg path="${outdir-classes-ospath}" />
             <fileset dir="${external-libs}" includes="*.jar"/>
