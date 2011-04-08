@@ -164,7 +164,7 @@
 
     <!-- Compile this project's .java files into .class files. -->
     <target name="compile" depends="dirs, resource-src, aidl">
-      <groovyc  srcdir="." destdir="${outdir-classes}"  encoding="UTF-8" >
+      <groovyc  srcdir="." destdir="${outdir-classes}"  encoding="ascii" >
       <javac target="1.5" debug="true"/>
       <classpath>
                 <fileset dir="${external-libs}" includes="*.jar"/>
@@ -181,10 +181,6 @@
             <!-- arg value="-JXmx1024m" / -->
             <arg value="--dex" />
             <arg value="--no-locals"/>
-            <arg value="--debug"/>
-            <arg value="--no-optimize"/>
-            <arg value="--keep-classes"/>
-            <arg value="--verbose"/>
             <arg value="--output=${intermediate-dex-ospath}" />
             <arg path="${outdir-classes-ospath}" />
             <fileset dir="${external-libs}" includes="*.jar"/>

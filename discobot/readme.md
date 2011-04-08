@@ -70,8 +70,8 @@ cd discobot
 
 
 cd ~/pro
-export CLASSPATH=libs/discobot.jar
-ant
+sh ./ant_cmp.sh
+	need ant,maven,java path root
 
 //-------------------------------------------------------------
 ls -la bin/*.apk
