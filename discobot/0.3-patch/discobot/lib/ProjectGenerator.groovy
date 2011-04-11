@@ -2,7 +2,8 @@ import org.apache.commons.io.FileUtils
 
 class ProjectGenerator {
     //simple files and dirs that exsist in the project directory
-    static def filterList = ["build.xml", "AndroidManifest.xml", "default.properties"]
+    static def filterList = ["build.xml", "AndroidManifest.xml", "default.properties", 
+                             "ant_cmp.sh", "ant_cmp.bat"]//2011/04/08 kimukou_26 append file
     static def dirList = ["libs", "res", "tools"]
 
     //The parser states, these would be inside a enum if i could have
@@ -69,7 +70,7 @@ class ProjectGenerator {
         println "\tTo:" + to
         if(!to.exists()) FileUtils.touch(to)
 
-        config["api"] = Util.getTargetPath()	//2011/04/07 kimukou_26 add
+        config["api"] = Util.getTargetPath()  //2011/04/07 kimukou_26 add
         to.withPrintWriter {writer->
             from.eachLine {
                 def str = it.replace((CharSequence)"%%app-name%%", config["name"])

@@ -1,4 +1,4 @@
-set GRADLE_HOME=D:\Tooldev\gradle-1.0-m1
+set GRADLE_HOME=D:\Tooldev\gradle-1.0-milestone-2
 set JAVA_HOME=c:\opt\jdk
 set ANDROID_HOME=D:/Tooldev/android-sdk-windows
 
