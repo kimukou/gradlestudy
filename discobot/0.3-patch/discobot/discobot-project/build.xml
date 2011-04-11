@@ -164,7 +164,8 @@
 
     <!-- Compile this project's .java files into .class files. -->
     <target name="compile" depends="dirs, resource-src, aidl">
-      <groovyc  srcdir="." destdir="${outdir-classes}"  encoding="ascii" >
+      <!--groovyc  srcdir="." destdir="${outdir-classes}"  encoding="ascii"-->
+			<groovyc  srcdir="." destdir="${outdir-classes}"  encoding="UTF-8">
       <javac target="1.6" debug="true"/>
       <classpath>
                 <fileset dir="${external-libs}" includes="*.jar"/>

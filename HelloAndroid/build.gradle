@@ -2,7 +2,7 @@ apply plugin: 'android'
 apply plugin: 'project-report'
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-1'
+    gradleVersion = '1.0-milestone-2'
 }
 
 buildscript {
@@ -10,7 +10,7 @@ buildscript {
         mavenRepo(urls: 'http://jvoegele.com/maven2/')
     }
     dependencies {
-        classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.7'
+        classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.9'
     }
 }
 
@@ -21,7 +21,7 @@ repositories {
 
 
 dependencies {
-    //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.8'
+    //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.10'
 		compile group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
 		runtime group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
 }

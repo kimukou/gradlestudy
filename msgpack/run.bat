@@ -1,4 +1,4 @@
-set GRADLE_HOME=D:\Tooldev\gradle-1.0-m1
+set GRADLE_HOME=D:\Tooldev\gradle-1.0-milestone-2
 set JAVA_HOME=c:\opt\jdk
 
 set PATH=%GRADLE_HOME%/bin;%JAVA_HOME%/bin
