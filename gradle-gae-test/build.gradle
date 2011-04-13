@@ -1,0 +1,44 @@
+apply plugin: 'gaelyk'
+
+//see https://github.com/jetztgradnet/gradle-gaelyk-plugin
+
+buildscript {
+    repositories {
+      add(new org.apache.ivy.plugins.resolver.URLResolver()) {
+            name = "GitHub"
+            addArtifactPattern 'http://cloud.github.com/downloads/bmuschko/gradle-gaelyk-plugin/[module]-[revision].[ext]'
+      }
+      mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.google.appengine:appengine-tools-sdk:1.4.3'
+        classpath ':gradle-gaelyk-plugin:0.1'
+    }
+}
+
+gaelyk {
+    httpPort = 8085
+
+    appcfg {
+        email = E_MAIL
+        passIn = true
+
+        logs {
+            severity = 1
+            outputFile = new File("mylogs.txt")
+        }
+    }
+    warDir = new File("war")
+}
+
+apply plugin: 'groovy'
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ["src"]
+        }
+    }
+}
+webAppDirName = new File("war")
+

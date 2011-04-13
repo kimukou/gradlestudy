@@ -38,8 +38,11 @@ need enviroments
 
 ---------------------------------------------------------------------
 2. msgpack
+
 		run.bat
+
 3. msgpack-rpc
+
 		a)gradlew.bat -b sv_build.gradle
 		b)gradlew.bat -b cl_build.gradle
 				or
@@ -48,6 +51,7 @@ need enviroments
 
 ---------------------------------------------------------------------
 4. tester gradle setting
+
 	gradle android plugin test
 			https://github.com/jvoegele/gradle-android-plugin
 
@@ -66,3 +70,7 @@ need enviroments
 
 		4.4	copy to tester into master code
 
+
+---------------------------------------------------------------------
+5. Gaelyk gradle setting
+	gradle-gae-test
