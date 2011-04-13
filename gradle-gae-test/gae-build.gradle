@@ -19,7 +19,7 @@ buildscript {
 }
 
 gae {
-    httpPort = 8085
+    httpPort = 9090
 
     appcfg {
         email = E_MAIL
