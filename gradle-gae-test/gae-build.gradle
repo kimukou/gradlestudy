@@ -1,7 +1,7 @@
 apply plugin: 'gae'
 
 
-//see https://github.com/bmuschko/gradle-gae-plugin/tree/v0.3
+//see https://github.com/bmuschko/gradle-gae-plugin/tree/v0.4
 
 buildscript {
     repositories {
@@ -14,7 +14,7 @@ buildscript {
 
     dependencies {
         classpath 'com.google.appengine:appengine-tools-sdk:1.4.3'
-        classpath ':gradle-gae-plugin:0.3'
+        classpath ':gradle-gae-plugin:0.4'
     }
 }
 
