@@ -9,16 +9,16 @@ import java.util.zip.ZipEntry
 class Merge{
     public static void main(String[] args){
         def config = [groovy_src:"groovy-core",
-		    discobot_src:"discobot-patches",
-		    dest:"mixer",
-		    cwd:System.getProperty("user.dir"),
-		    clean:false,
-		    copy:false,
-		    simulate:false,
-		    test:false,
-		    android_path:Util.getAndroidPath(),
-				target_api:Util.getTargetPath()			//2011/04/07 kimukou_26 add
-		]
+        discobot_src:"discobot-patches",
+        dest:"mixer",
+        cwd:System.getProperty("user.dir"),
+        clean:false,
+        copy:false,
+        simulate:false,
+        test:false,
+        android_path:Util.getAndroidPath(),
+        target_api:Util.getTargetPath()     //2011/04/07 kimukou_26 add
+    ]
 
         //This is the commandqueue the commands in this list
         //are executed only if no errors are detected
@@ -35,7 +35,7 @@ class Merge{
             }
         }
 
-	if(!Util.verifyAndroidPath(config["android_path"])) System.exit(-1)
+  if(!Util.verifyAndroidPath(config["android_path"])) System.exit(-1)
 
         if(config["clean"]){
             println "Cleaning."
@@ -47,8 +47,8 @@ class Merge{
             commands << ["copydir",new File(config["groovy_src"]),new File(config["dest"])]
 
             //Copy the android jar
-	    def andJar  = Util.strToFile(config["android_path"] + "platforms/android-1.6/android.jar")
-	    def andDest = Util.strToFile(config["dest"] + "/target/lib/compile/android.jar")
+      def andJar  = Util.strToFile(config["android_path"] + "platforms/android-1.6/android.jar")
+      def andDest = Util.strToFile(config["dest"] + "/target/lib/compile/android.jar")
             commands << ["copyAndroidJar",andJar ,andDest]
         }
 

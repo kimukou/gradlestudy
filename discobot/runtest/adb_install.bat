@@ -13,4 +13,10 @@ set PATH=%ANT_HOME%/bin;%JAVA_HOME%/bin;%ANDROID_HOME%/platform-tools;%ANDROID_H
 :: android create avd --name myAVD --target 1
 
 ::run emurator
+
+::adb uninstall package name!
+::  see http://www.techmaru.net/ar/adbinstall.php
+call adb uninstall org.jggug.sample
+
+
 call adb install bin/Main-debug.apk

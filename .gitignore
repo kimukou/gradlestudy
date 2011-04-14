@@ -2,3 +2,7 @@
 */bin
 */build
 */gen
+discobot/runtest/bin/classes
+discobot/runtest/bin/classes/*
+discobot/runtest/bin/classes.dex
+discobot/runtest/bin/*.ap_
