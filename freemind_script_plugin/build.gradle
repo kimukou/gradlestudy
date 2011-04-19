@@ -1,0 +1,57 @@
+apply plugin: 'java'
+//[compileJava, compileTestJava]*.options.collect {options -> options.encoding = 'UTF-8'}
+
+allprojects { 
+    sourceCompatibility = 1.6 
+    targetCompatibility = 1.6 
+} 
+
+//version = "1.4-SNAPSHOT"
+archivesBaseName = "scripting_plugin"
+
+
+def JDK_HOME = 'c:/opt/jdk'
+//compile.compilerArgs = ['-Xlint:unchecked']
+//compile.options.compilerArgs = ['-Xlint', 'othervalue']
+
+repositories {
+		flatDir(dirs: file("$rootDir/lib"))
+		flatDir(dirs: file("$rootDir/libs"))
+    mavenCentral()
+    //mavenRepo urls: [ "http://download.java.net/maven/2/",
+    //                  "http://repository.jboss.org/maven2/",
+    //                  "http://repository.jboss.org/nexus/content/groups/public-jboss/"]
+}
+
+dependencies {
+		//compile module(':groovy-all:1.5.6')
+		compile module(':groovy-all:1.7.10')
+		compile module(':freemind:')
+    testCompile 'junit:junit:3.8.1'
+}
+
+//depency lib include and Manifest-INF
+//jar {
+//    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+//}
+//manifest.mainAttributes("Main-Class" : "org.kohsuke.youdebug.YouDebug")
+
+
+//既存タスクにAppend
+pluginName="scriptE"
+jar << {
+		ant.echo "jar creating!!"
+		ant.copy(tofile: "$rootDir/build/plugins/ScriptingEngine.xml", overwrite: true ){
+			fileset(file: "$rootDir/setting/ScriptingEngine.xml")
+			filterset { 
+				filter(token:"scripting_plugin",value:"$pluginName/${archivesBaseName}.jar")
+				filter(token:"groovy-all",value:"$pluginName/groovy-all-1.7.10.jar")
+			}
+		}
+		ant.copy(todir: "$rootDir/build/plugins/$pluginName", overwrite: true ){
+			fileset(dir: "$rootDir/build/libs", includes: '*.jar')
+			fileset(dir: "$rootDir/lib", includes: '*.jar')
+		}
+}
+
+
