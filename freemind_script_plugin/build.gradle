@@ -1,5 +1,16 @@
-apply plugin: 'java'
-//[compileJava, compileTestJava]*.options.collect {options -> options.encoding = 'UTF-8'}
+
+apply plugin: 'groovy'
+
+def jdkVersion = 1.6
+def enc = 'UTF-8'
+sourceCompatibility = jdkVersion
+targetCompatibility = jdkVersion
+[compileGroovy, compileTestGroovy].each{ it.options.encoding = enc }
+[compileGroovy, compileTestGroovy].each{ it.groovyOptions.encoding = enc }
+
+
+//apply plugin: 'java'
+[compileJava, compileTestJava]*.options.collect {options -> options.encoding = enc}
 
 allprojects { 
     sourceCompatibility = 1.6 
@@ -18,17 +29,29 @@ repositories {
 		flatDir(dirs: file("$rootDir/lib"))
 		flatDir(dirs: file("$rootDir/libs"))
     mavenCentral()
-    //mavenRepo urls: [ "http://download.java.net/maven/2/",
-    //                  "http://repository.jboss.org/maven2/",
-    //                  "http://repository.jboss.org/nexus/content/groups/public-jboss/"]
+/*
+    mavenRepo urls: [ "http://download.java.net/maven/2/",
+                      "http://repository.jboss.org/maven2/",
+                      "http://repository.jboss.org/nexus/content/groups/public-jboss/",
+											"http://svn.codehaus.org/griffon/plugins"]
+*/
 }
 
 dependencies {
+		compile 'org.easyb:easyb:0.9.8'
 		//compile module(':groovy-all:1.5.6')
 		compile module(':groovy-all:1.7.10')
 		compile module(':freemind:')
+
     testCompile 'junit:junit:3.8.1'
 		testCompile 'org.easytesting:fest-swing:1.2.1'
+		testCompile 'org.easytesting:fest-swing-junit-4.5:1.2.1'
+		testCompile 'junit:junit:4.8.2'
+		testCompile 'org.spockframework:spock-core:0.5-groovy-1.7'
+		testCompile 'org.easyb:easyb:0.9.8'
+		testCompile module(':griffon-easyb:0.4-test')
+		testCompile module(':griffon-fest:0.6-test')
+		testCompile module(':griffon-spock:0.3-test')
 }
 
 //depency lib include and Manifest-INF
