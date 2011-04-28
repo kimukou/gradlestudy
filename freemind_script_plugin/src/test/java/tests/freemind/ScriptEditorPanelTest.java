@@ -42,8 +42,10 @@ import plugins.script.ScriptingEngine.ErrorHandler;
 public class ScriptEditorPanelTest extends FreeMindTestBase {
 
 	private static final class TestScriptModel implements ScriptModel {
-		String[] scripts = {"j=0;\nfor(i in (0..6))\n	{\n		j+=i; \n		print i;\n	}; \nreturn j;\n",
-		"for(i=0;i<5;++i){print i;}"};
+		String[] scripts = {
+			"j=0;\nfor(i in (0..6))\n	{\n		j+=i; \n		print i;\n	}; \nreturn j;\n",
+			"for(i=0;i<5;++i){print i;}"
+		};
 
 		public int getAmountOfScripts() {
 			// TODO Auto-generated method stub
