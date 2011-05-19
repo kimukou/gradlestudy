@@ -4,9 +4,9 @@ runnning
 	1. https://appengine.google.com/
 		SDK download
 	2. http://gaelyk.appspot.com/download
-		Template project v0.6.1 download
+		Template project v0.7 download
 	3. unzip
-		gaelyk-template-project-0.6.1.zip
+		gaelyk-template-project-0.7.zip
 
 	4. appid edif
 		edit myappid => change app id
