@@ -1,5 +1,5 @@
 freemind version libs/freemind.jar
-	1.0.0_Alpha_3
+	1.0.0_Alpha_4
 
 
 backup to

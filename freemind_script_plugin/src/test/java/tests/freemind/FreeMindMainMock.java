@@ -39,7 +39,7 @@ import freemind.main.FreeMindMain;
 import freemind.main.FreeMindStarter;
 import freemind.main.Resources;
 import freemind.view.mindmapview.MapView;
-
+import java.io.*;
 /** */
 public class FreeMindMainMock implements FreeMindMain {
 
@@ -50,10 +50,27 @@ public class FreeMindMainMock implements FreeMindMain {
      */
     public FreeMindMainMock() {
         super();
-		mProperties = new FreeMindStarter().readDefaultPreferences();
+				mProperties = new FreeMindStarter().readDefaultPreferences();
         Resources.createInstance(this);
-
+				mProperties.putAll(readDefaultPreferences());//2011/05/24 kimukou_26 add
     }
+
+		public Properties readDefaultPreferences() {
+			String propsLoc = "Resources_ja.properties";
+			URL defaultPropsURL = this.getClass().getClassLoader().getResource(propsLoc);
+			Properties props = new Properties();
+			try {
+				InputStream in = defaultPropsURL.openStream();
+				props.load(in);
+				in.close();
+			} catch (Exception ex) {
+				ex.printStackTrace();
+				System.err
+				.println("Panic! Error while loading " + propsLoc);
+			}
+			return props;
+		}
+
 
     public JFrame getJFrame() {
         return null;
@@ -90,7 +107,12 @@ public class FreeMindMainMock implements FreeMindMain {
     }
 
     public String getResourceString(String key) {
-        return key;
+//2011/05/24 kimukou_26 mod start
+				Object obj = mProperties.get(key);
+				if(obj==null)return key;
+				return (String)mProperties.get(key);
+        //return key;
+//2011/05/24 kimukou_26 mod end
     }
 
     public String getResourceString(String key, String resource) {

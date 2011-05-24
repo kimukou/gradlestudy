@@ -1,4 +1,4 @@
-set GROOVY_HOME=C:\opt\groovy-1.7.10
+set GROOVY_HOME=C:\opt\groovy-1.8.0
 set GRADLE_HOME=D:\Tooldev\gradle-1.0-milestone-3
 set JAVA_HOME=c:\opt\jdk
 set ANT_HOME=D:\Tooldev\ant

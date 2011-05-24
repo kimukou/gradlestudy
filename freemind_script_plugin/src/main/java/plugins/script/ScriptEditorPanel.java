@@ -369,6 +369,7 @@ public class ScriptEditorPanel extends JDialog {
 			mCentralPanel.setDividerLocation(240);
 		}
 
+		this.setSize(300,300);//2011/05/24 kimukou_26 add
 	}
 
 	private void addAction(JMenu menu, AbstractAction action) {

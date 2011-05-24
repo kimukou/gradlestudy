@@ -27,7 +27,6 @@ def JDK_HOME = 'c:/opt/jdk'
 
 repositories {
 		flatDir(dirs: file("$rootDir/lib"))
-		flatDir(dirs: file("$rootDir/libs"))
     mavenCentral()
 /*
     mavenRepo urls: [ "http://download.java.net/maven/2/",
@@ -38,11 +37,11 @@ repositories {
 }
 
 dependencies {
-		compile 'org.easyb:easyb:0.9.8'
 		//compile module(':groovy-all:1.5.6')
-		compile module(':groovy-all:1.7.10')
-		compile module(':freemind:')
+		compile module(':groovy-all:1.8.0')
+		compile fileTree(dir: 'libs', includes: ['*.jar'])
 
+		testRuntime  fileTree(dir: 'libs', includes: ['*.jar'])
     testCompile 'junit:junit:3.8.1'
 		testCompile 'org.easytesting:fest-swing:1.2.1'
 		testCompile 'org.easytesting:fest-swing-junit-4.5:1.2.1'
@@ -62,6 +61,13 @@ dependencies {
 
 
 //既存タスクにAppend
+task propertiesCopy << {
+	ant.copt(tofile: "$rootDir/build/classes/main/plugins/script/Resources_ja.properties", overwrite: true ){
+			fileset(file: "$rootDir/setting/Resources_ja.properties")
+	}
+}
+build.dependsOn propertiesCopy
+
 pluginName="scriptE"
 jar << {
 		ant.echo "jar creating!!"
@@ -69,7 +75,7 @@ jar << {
 			fileset(file: "$rootDir/setting/ScriptingEngine.xml")
 			filterset { 
 				filter(token:"scripting_plugin",value:"$pluginName/${archivesBaseName}.jar")
-				filter(token:"groovy-all",value:"$pluginName/groovy-all-1.7.10.jar")
+				filter(token:"groovy-all",value:"$pluginName/groovy-all-1.8.0.jar")
 			}
 		}
 		ant.copy(todir: "$rootDir/build/plugins/$pluginName", overwrite: true ){
