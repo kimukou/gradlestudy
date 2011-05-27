@@ -66,6 +66,7 @@ task propertiesCopy << {
 			fileset(file: "$rootDir/setting/Resources_ja.properties")
 	}
 }
+//buildタスクに依存させる
 build.dependsOn propertiesCopy
 
 pluginName="scriptE"
