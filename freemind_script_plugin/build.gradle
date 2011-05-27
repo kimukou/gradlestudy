@@ -1,0 +1,88 @@
+
+apply plugin: 'groovy'
+
+def jdkVersion = 1.6
+def enc = 'UTF-8'
+sourceCompatibility = jdkVersion
+targetCompatibility = jdkVersion
+[compileGroovy, compileTestGroovy].each{ it.options.encoding = enc }
+[compileGroovy, compileTestGroovy].each{ it.groovyOptions.encoding = enc }
+
+
+//apply plugin: 'java'
+[compileJava, compileTestJava]*.options.collect {options -> options.encoding = enc}
+
+allprojects { 
+    sourceCompatibility = 1.6 
+    targetCompatibility = 1.6 
+} 
+
+//version = "1.4-SNAPSHOT"
+archivesBaseName = "scripting_plugin"
+
+
+def JDK_HOME = 'c:/opt/jdk'
+//compile.compilerArgs = ['-Xlint:unchecked']
+//compile.options.compilerArgs = ['-Xlint', 'othervalue']
+
+repositories {
+		flatDir(dirs: file("$rootDir/lib"))
+    mavenCentral()
+/*
+    mavenRepo urls: [ "http://download.java.net/maven/2/",
+                      "http://repository.jboss.org/maven2/",
+                      "http://repository.jboss.org/nexus/content/groups/public-jboss/",
+											"http://svn.codehaus.org/griffon/plugins"]
+*/
+}
+
+dependencies {
+		//compile module(':groovy-all:1.5.6')
+		compile module(':groovy-all:1.8.0')
+		compile fileTree(dir: 'libs', includes: ['*.jar'])
+
+		testRuntime  fileTree(dir: 'libs', includes: ['*.jar'])
+    testCompile 'junit:junit:3.8.1'
+		testCompile 'org.easytesting:fest-swing:1.2.1'
+		testCompile 'org.easytesting:fest-swing-junit-4.5:1.2.1'
+		testCompile 'junit:junit:4.8.2'
+		testCompile 'org.spockframework:spock-core:0.5-groovy-1.7'
+		testCompile 'org.easyb:easyb:0.9.8'
+		testCompile module(':griffon-easyb:0.4-test')
+		testCompile module(':griffon-fest:0.6-test')
+		testCompile module(':griffon-spock:0.3-test')
+}
+
+//depency lib include and Manifest-INF
+//jar {
+//    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+//}
+//manifest.mainAttributes("Main-Class" : "org.kohsuke.youdebug.YouDebug")
+
+
+//既存タスクにAppend
+task propertiesCopy << {
+	ant.copt(tofile: "$rootDir/build/classes/main/plugins/script/Resources_ja.properties", overwrite: true ){
+			fileset(file: "$rootDir/setting/Resources_ja.properties")
+	}
+}
+//buildタスクに依存させる
+build.dependsOn propertiesCopy
+
+pluginName="scriptE"
+jar << {
+		ant.echo "jar creating!!"
+		ant.copy(tofile: "$rootDir/build/plugins/ScriptingEngine.xml", overwrite: true ){
+			fileset(file: "$rootDir/setting/ScriptingEngine.xml")
+			filterset { 
+				filter(token:"scripting_plugin",value:"$pluginName/${archivesBaseName}.jar")
+				filter(token:"groovy-all",value:"$pluginName/groovy-all-1.8.0.jar")
+			}
+		}
+		ant.copy(todir: "$rootDir/build/plugins/$pluginName", overwrite: true ){
+			fileset(dir: "$rootDir/build/libs", includes: '*.jar')
+			fileset(dir: "$rootDir/lib", includes: '*.jar')
+		}
+}
+
+
