@@ -1,11 +1,16 @@
 need enviroments 
-	jdk6u24
+	jdk6u26
 	gradlew.bat or sh gradlew
 		or
-	jdk6u24
+	jdk6u26
 	gradle milestorne 1 http://www.gradle.org/
 
+gradle users documents
+	release page  http://www.gradle.org/
+	english  http://www.gradle.org/current/docs/userguide/userguide_single.html
+	japanise http://www.monochromeroad.com/artifacts/gradle/userguide/userguide.html
 
+---------------------------------------------------------------------
 0. android enviroments
 	need android sdk
 	■prepare
