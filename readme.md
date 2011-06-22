@@ -43,8 +43,9 @@ gradle users documents
 
 ---------------------------------------------------------------------
 2. msgpack
-
 		run.bat
+			or
+		gradlew.bat / gradlew (need java)
 
 3. msgpack-rpc
 
