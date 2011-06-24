@@ -14,31 +14,30 @@ targetCompatibility = jdkVersion
 */
 
 buildscript {
-	repositories {
-	    mavenCentral()
-			mavenRepo urls: [ "http://msgpack.org/maven2/",
-												"http://download.java.net/maven/2/",
-												"http://repository.jboss.org/maven2/",
-												"http://repository.jboss.org/nexus/content/groups/public-jboss/"]
-
-	}
-	dependencies {
+    repositories {
+        mavenCentral()
+            mavenRepo urls: [ "http://msgpack.org/maven2/",
+                              "http://download.java.net/maven/2/",
+                              "http://repository.jboss.org/maven2/",
+                              "http://repository.jboss.org/nexus/content/groups/public-jboss/"]
+    }
+    dependencies {
 /*
-		classpath "org.msgpack:msgpack-rpc:0.6.1-devel",
-							"org.msgpack:msgpack:0.5.1-devel",
-							"org.apache.mina:mina-core:2.0.1",
-							"org.jboss.xnio:xnio-api:2.0.2.GA",
-							"org.jboss.xnio:xnio-nio:2.0.2.GA",
-							"org.jboss.netty:netty:3.2.1.Final",
-							"javassist:javassist:3.12.1.GA"
-							//"junit:junit:4.8.1"
+        classpath "org.msgpack:msgpack-rpc:0.6.1-devel",
+                            "org.msgpack:msgpack:0.5.1-devel",
+                            "org.apache.mina:mina-core:2.0.1",
+                            "org.jboss.xnio:xnio-api:2.0.2.GA",
+                            "org.jboss.xnio:xnio-nio:2.0.2.GA",
+                            "org.jboss.netty:netty:3.2.1.Final",
+                            "javassist:javassist:3.12.1.GA"
+                            //"junit:junit:4.8.1"
 */
-		classpath("org.msgpack:msgpack-rpc:0.6.1-devel")
-		//classpath("org.msgpack:msgpack:0.5.1-devel")
-		//classpath("org.jboss.netty:netty:3.2.1.Final")
-	}
+        classpath("org.msgpack:msgpack-rpc:0.6.1-devel")
+        //classpath("org.msgpack:msgpack:0.5.1-devel")
+        //classpath("org.jboss.netty:netty:3.2.1.Final")
+    }
 /*
-	configurations {
+    configurations {
     classpath.exclude module: 'msgpack-rpc'
     classpath.exclude module: 'msgpack'
   }
@@ -59,8 +58,8 @@ class ServerApp {
         return msg
     }
 */
-		//== instead ==> 
-		void hello(Request request, String msg, int a){
+        //== instead ==> 
+        void hello(Request request, String msg, int a){
         if(a > 0){
             // send normal response
             request.sendResult(msg)
@@ -73,11 +72,11 @@ class ServerApp {
 }
 
 task TestServer{
-		println "TestServer start"
-		EventLoop loop = EventLoop.defaultEventLoop()
-		Server svr = new Server(loop)
-		svr.serve(new ServerApp())
-		println "TestServer 1985 listen"
-		svr.listen(1985)
-		loop.join()
+        println "TestServer start"
+        EventLoop loop = EventLoop.defaultEventLoop()
+        Server svr = new Server(loop)
+        svr.serve(new ServerApp())
+        println "TestServer 1985 listen"
+        svr.listen(1985)
+        loop.join()
 }
