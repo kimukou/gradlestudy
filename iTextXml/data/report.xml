@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REPORT>
+	<REPORTTITLE>Report</REPORTTITLE>
+	<NEWLINE />
+	<TABLE>
+	<ROW>
+		<CELL1>あいうえお</CELL1>
+		<CELL2>漢字</CELL2>
+	</ROW>
+	<ROW>
+		<CELL1> <img src="images/nr001.png" /> </CELL1>
+		<CELL3>${layoutNo}:${date}</CELL3>
+		<CELL3>設定</CELL3>
+	</ROW>
+	</TABLE>
+	<NEWPAGE />     
+</REPORT>
