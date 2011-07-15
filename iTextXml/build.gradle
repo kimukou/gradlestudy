@@ -1,0 +1,94 @@
+defaultTasks 'TestPdf'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.0-milestone-3'
+}
+
+def jdkVersion = 1.6
+def enc = 'UTF-8'
+sourceCompatibility = jdkVersion
+targetCompatibility = jdkVersion
+/*
+[compileJava, compileGroovy, compileTestJava, compileTestGroovy].each{ it.options.encoding = enc }
+[compileGroovy, compileTestGroovy].each{ it.groovyOptions.encoding = enc }
+*/
+
+buildscript {
+    repositories {
+        flatDir(dirs: file("$projectDir/libs"))
+        mavenCentral()
+        //mavenRepo urls: [ "http://msgpack.org/maven2/",
+        //                      "http://download.java.net/maven/2/",
+        //                      "http://repository.jboss.org/maven2/",
+        //                      "http://repository.jboss.org/nexus/content/groups/public-jboss/"]
+    }
+    dependencies {
+        classpath("org.codehaus.groovy:groovy-all:1.8.0")
+        classpath("com.lowagie:itext:2.1.7")
+        classpath(":iTextAsian:")
+        classpath(":iTextAsianCmaps:")
+    }
+}
+
+
+import com.lowagie.text.*
+import com.lowagie.text.pdf.*
+import com.lowagie.text.xml.*
+
+import java.awt.Color
+import javax.xml.parsers.*
+import java.io.*
+import java.util.*
+import org.xml.sax.InputSource
+import java.text.SimpleDateFormat
+
+
+task TestPdf{
+
+		Document document = new Document(PageSize.A4, 30, 30, 70, 50)
+		PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("report.pdf"))
+		//writer.setPageEvent(this);
+
+		// PDFメタ情報
+		document.addTitle 'レポートテスト'
+		// pdf構築開始
+   	document.open()
+
+		//タグマップ(タグ定義)読込
+		SAXParser parser = SAXParserFactory.newInstance().newSAXParser()
+		SAXmyHandler handler = new SAXmyHandler(document, new TagMap("data/tagmap.xml"))
+		//SAXmyHandler handler = getXmlHandler(document);
+
+		// 日本語フォント設定
+		BaseFont baseFont  = BaseFont.createFont("HeiseiKakuGo-W5","UniJIS-UCS2-H",BaseFont.NOT_EMBEDDED);
+	  //BaseFont baseFont  = BaseFont.createFont('Helvetica', BaseFont.WINANSI, false)
+		handler.setBaseFont(baseFont)
+
+	
+		//====> 仮データ
+		//レイアウト番号
+		def layoutNo = 1
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:MM")
+		def d = new Date()
+		def date = sdf.format(d)
+
+
+		//テンプレートファイルの読込(UTF-8)
+		def f = new File('data/report.xml').newReader("UTF-8")
+		def engine = new groovy.text.GStringTemplateEngine()
+		def binding = [
+						'layoutNo':layoutNo
+						,'date':date
+						//,'reportBody':reportBody
+		]
+		def templateRD = engine.createTemplate(f).make(binding)
+		def	xmlText = templateRD.toString()
+
+		//println "templateRD=${templateRD.class}"
+		//println "xmlText=$xmlText"
+	    
+		//PDF出力(UTF-8)
+		InputSource inputSource = new InputSource(new StringReader(xmlText))
+		inputSource.setEncoding("UTF-8")
+		parser.parse(inputSource, handler )
+}

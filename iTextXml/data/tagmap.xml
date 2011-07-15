@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagmap>
+        <tag name="itext" alias="REPORT" />
+        <tag name="newpage" alias="NEWPAGE" />
+        <tag name="newline" alias="NEWLINE" />
+        <tag name="paragraph" alias="REPORTTITLE">
+                <attribute name="size" value="18" />
+                <attribute name="align" value="Center" />
+                <attribute name="color" value="red" />
+        </tag>
+        <tag name="table" alias="TABLE">
+                <attribute name="borderwidth" value="2" />
+        </tag>
+
+        <tag name="row" alias="ROW" />
+
+        <tag name="cell" alias="CELL1">
+                <attribute name="size" value="18" />
+        </tag>
+        <tag name="cell" alias="CELL2">
+                <attribute name="size" value="12" />
+        </tag>
+
+	  <tag name="image" alias="img">
+    	<attribute name="url" alias="src" />
+	  </tag>
+
+	  <tag name="cell" alias="CELL3">
+            <attribute name="bordercolor" value="BLACK" />
+            <attribute name="top" value="true" />
+            <attribute name="bottom" value="true" />
+            <attribute name="left" value="true" />
+            <attribute name="right" value="true" />
+            <attribute name="colspan" value="10" />
+            <attribute name="horizontalalign" value="Center" />
+            <attribute name="verticalalign" value="Bottom" />
+            <attribute name="grayfill" value="0.65" />
+    </tag>
+
+</tagmap>
