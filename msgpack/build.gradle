@@ -33,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.8'
+    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.8.0'
     groovy group: 'commons-cli', name : 'commons-cli', version: '1.2'
     groovy group: 'org.msgpack', name: 'msgpack', version: '0.5.2-devel'
 
