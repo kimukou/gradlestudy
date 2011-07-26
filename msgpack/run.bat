@@ -1,11 +1,8 @@
-set GRADLE_HOME=D:\Tooldev\gradle-1.0-milestone-3
-set JAVA_HOME=c:\opt\jdk
-
-set PATH=%GRADLE_HOME%/bin;%JAVA_HOME%/bin
-
+call ../setEnvGG.bat
 
 ::call gradle clean jar
-call gradle jar %*
+::call gradle jar %*
+call gradlew jar %*
 
 echo "====jar running start =="
 java -jar build/libs/msgpack.jar

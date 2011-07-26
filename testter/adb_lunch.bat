@@ -1,8 +1,4 @@
-set ANT_HOME=D:/Tooldev/ant
-set JAVA_HOME=c:\opt\jdk
-set ANDROID_HOME=D:/Tooldev/android-sdk-windows
-set PATH=%ANT_HOME%/bin;%JAVA_HOME%/bin;%ANDROID_HOME%/platform-tools;%ANDROID_HOME%/tools
-set JAVA_OPTS=-Dgroovy.source.encoding=UTF-8 -Dfile.encoding=UTF-8
+call ../setEnvGG.bat
 
 ::see http://www.neko.ne.jp/~freewing/android/android/
 ::    http://dev.ariel-networks.com/Members/iwanaga/android-intro/
