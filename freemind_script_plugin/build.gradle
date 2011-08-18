@@ -42,7 +42,7 @@ dependencies {
 		compile fileTree(dir: 'libs', includes: ['*.jar'])
 
 		testRuntime  fileTree(dir: 'libs', includes: ['*.jar'])
-    testCompile 'junit:junit:3.8.1'
+    //testCompile 'junit:junit:3.8.1'
 		testCompile 'org.easytesting:fest-swing:1.2.1'
 		testCompile 'org.easytesting:fest-swing-junit-4.5:1.2.1'
 		testCompile 'junit:junit:4.8.2'

@@ -22,8 +22,8 @@ repositories {
 
 dependencies {
     //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.10'
-		compile group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
-		runtime group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
+    compile group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
+    runtime group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
 }
 
 
@@ -46,12 +46,12 @@ sourceSets.main.java.srcDirs += ['src']
 ant.echo sourceSets.main.java.srcDirs
 /*
 task hoge{
-	def ANDROID_HOME=System.getenv()['ANDROID_HOME']
-	ant.echo  "ANDROID_HOME=$ANDROID_HOME"
-	//ant.exec(executable: "$ANDROID_HOME/tools/emulator", dir: ANDROID_HOME, output: "$rootDir/svnlist.log" , spawn:'true') {
-	ant.exec(executable: "emulator", dir: ".", output: "svnlist.log" , spawn:'true') {
-		arg(line: "-avd myAVD")
-	}
+    def ANDROID_HOME=System.getenv()['ANDROID_HOME']
+    ant.echo  "ANDROID_HOME=$ANDROID_HOME"
+    //ant.exec(executable: "$ANDROID_HOME/tools/emulator", dir: ANDROID_HOME, output: "$rootDir/svnlist.log" , spawn:'true') {
+    ant.exec(executable: "emulator", dir: ".", output: "svnlist.log" , spawn:'true') {
+        arg(line: "-avd myAVD")
+    }
 }
 */
 
