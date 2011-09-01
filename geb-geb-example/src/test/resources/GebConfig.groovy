@@ -7,6 +7,7 @@
 import org.openqa.selenium.htmlunit.HtmlUnitDriver
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.ie.InternetExplorerDriver
 
 import org.openqa.selenium.remote.DesiredCapabilities
 
@@ -47,6 +48,10 @@ environments {
 	// See: http://code.google.com/p/selenium/wiki/FirefoxDriver
 	firefox {
 		driver = { new FirefoxDriver() }
+	}
+
+	ie {
+		driver = { new InternetExplorerDriver() }
 	}
 }
 // To run the tests with all browsers just run “./gradlew test”

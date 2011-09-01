@@ -4,7 +4,8 @@ import geb.spock.*
 
 class GoogleSpec extends GebReportingSpec {
 		
-	def "the first link should be wikipedia"() {
+	//def "the first link should be wikipedia"() {
+	def "ウィキペディアのリンクを押した時のテスト"() {
 		def fpath="output/${new Date().format('yyyyMMdd_HHmm')}"
 
 		when:
