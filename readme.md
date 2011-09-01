@@ -80,3 +80,12 @@ gradle users documents
 ---------------------------------------------------------------------
 5. Gaelyk gradle setting
 	gradle-gae-test
+
+6. gradle-gae-test chromeDriver running & capture(use windows)
+	geb-example-gradle
+		https://github.com/geb/geb-example-gradle
+
+	edit setting
+		http://d.hatena.ne.jp/tanamon/20090417/1239941367
+		http://d.hatena.ne.jp/w650/20110825/1314280671
+

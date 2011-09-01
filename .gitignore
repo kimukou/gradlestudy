@@ -2,10 +2,9 @@
 */bin
 */build
 */gen
-*/*.iml
-*/*.ipr
-*/*.iws
 discobot/runtest/bin/classes
 discobot/runtest/bin/classes/*
 discobot/runtest/bin/classes.dex
 discobot/runtest/bin/*.ap_
+*/*.log
+*/output
