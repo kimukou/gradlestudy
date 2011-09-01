@@ -1,5 +1,4 @@
-set JAVA_HOME=c:\opt\jdk
-set APPENGINE_HOME=D:\Tooldev\appengine-java-sdk-1.4.3
+call ../setEnvGG.bat
 
 :: see http://code.google.com/intl/ja/appengine/docs/java/tools/devserver.html
 
