@@ -31,8 +31,8 @@ environments {
 	//			http://d.hatena.ne.jp/w650/20110825/1314280671
 	chrome {
 		def cmPath="exe/win32/chromedriver.exe"
-    osArch = System.getProperty("os.arch")
-    is64Bit = osArch.contains("64")
+		osArch = System.getProperty("os.arch")
+		is64Bit = osArch.contains("64")
 		if(is64Bit){
 			cmPath="exe/win64/chromedriver.exe"
 		}
