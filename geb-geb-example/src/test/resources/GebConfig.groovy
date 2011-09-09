@@ -41,7 +41,18 @@ environments {
 		}
 		System.setProperty("webdriver.chrome.driver", cmPath)
 
-		driver = { new ChromeDriver() }
+		driver = { 
+/*
+			//downloading Chromium Portable 
+			// http://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/Browsers/Chromium-Portable.shtml
+			//
+			// locating ChromiumPortable
+			def capabilities = org.openqa.selenium.remote.DesiredCapabilities.chrome()	
+			capabilities.setCapability("chrome.binary", "ChromiumPortable\\App\\Chromium\\Chrome.exe")
+			new ChromeDriver(capabilities)
+*/
+			new ChromeDriver()
+		}
 	}
 	
 	// run via “./gradlew firefoxTest”
