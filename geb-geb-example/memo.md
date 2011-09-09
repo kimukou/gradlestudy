@@ -22,7 +22,7 @@ Windows
 
 
 調査したい項目）
-	ChromiumPortableをバイナリ位置指定で使えるかどうか?
+済) ChromiumPortableをバイナリ位置指定で使えるかどうか?
 		http://code.google.com/p/selenium/wiki/ChromeDriver#Overriding_the_Chrome_binary_location
 
 	ChromePortableはライセンス的に再配布は難しいみたい(Google Chrome自体が)

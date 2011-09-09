@@ -49,6 +49,7 @@ environments {
 			// locating ChromiumPortable
 			def capabilities = org.openqa.selenium.remote.DesiredCapabilities.chrome()	
 			capabilities.setCapability("chrome.binary", "ChromiumPortable\\App\\Chromium\\Chrome.exe")
+			capabilities.setCapability("chrome.switches", Arrays.asList("--start-maximized"))
 			new ChromeDriver(capabilities)
 */
 			new ChromeDriver()
