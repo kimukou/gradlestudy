@@ -8,3 +8,4 @@ discobot/runtest/bin/classes.dex
 discobot/runtest/bin/*.ap_
 */*.log
 */output
+*/ChromiumPortable
