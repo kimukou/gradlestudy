@@ -31,8 +31,8 @@ environments {
 	//			http://d.hatena.ne.jp/w650/20110825/1314280671
 	chrome {
 		def cmPath="exe/win32/chromedriver.exe"
-    osArch = System.getProperty("os.arch")
-    is64Bit = osArch.contains("64")
+		osArch = System.getProperty("os.arch")
+		is64Bit = osArch.contains("64")
 		if(is64Bit){
 			cmPath="exe/win64/chromedriver.exe"
 		}
@@ -41,7 +41,19 @@ environments {
 		}
 		System.setProperty("webdriver.chrome.driver", cmPath)
 
-		driver = { new ChromeDriver() }
+		driver = { 
+/*
+			//downloading Chromium Portable 
+			// http://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/Browsers/Chromium-Portable.shtml
+			//
+			// locating ChromiumPortable
+			def capabilities = org.openqa.selenium.remote.DesiredCapabilities.chrome()	
+			capabilities.setCapability("chrome.binary", "ChromiumPortable\\App\\Chromium\\Chrome.exe")
+			capabilities.setCapability("chrome.switches", Arrays.asList("--start-maximized"))
+			new ChromeDriver(capabilities)
+*/
+			new ChromeDriver()
+		}
 	}
 	
 	// run via “./gradlew firefoxTest”
