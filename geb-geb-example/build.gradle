@@ -3,7 +3,10 @@ apply plugin: "groovy"
 repositories {
 	flatDir name: 'localRepository', dirs: 'lib' 
 	mavenCentral()
-	mavenRepo urls: "https://nexus.codehaus.org/content/repositories/snapshots"
+	mavenRepo urls: [ 
+			"https://nexus.codehaus.org/content/repositories/snapshots",
+			"https://github.com/operasoftware/operadriver/tree/master/maven"
+	]
 }
 
 configurations {
@@ -31,6 +34,7 @@ dependencies {
 	drivers.each { driver ->
 		testCompile "org.seleniumhq.selenium:selenium-$driver-driver:$seleniumVersion"
 	}
+	testCompile "com.opera:operadriver:0.6"
 
 }
 

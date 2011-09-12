@@ -65,5 +65,9 @@ environments {
 	ie {
 		driver = { new InternetExplorerDriver() }
 	}
+
+	opera {
+		driver = { new OperaDriver() }
+	}
 }
 // To run the tests with all browsers just run “./gradlew test”
