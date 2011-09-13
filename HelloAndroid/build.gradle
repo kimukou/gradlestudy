@@ -17,6 +17,7 @@ buildscript {
 
 repositories {
     //flatDir(dirs: file("$projectDir/libs"))
+
     mavenCentral()
     mavenRepo urls: 'http://twitter4j.org/maven2'
 }
