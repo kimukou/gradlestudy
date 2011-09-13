@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.ie.InternetExplorerDriver
 
 import org.openqa.selenium.remote.DesiredCapabilities
+import org.openqa.selenium.remote.RemoteWebDriver
+import com.opera.core.systems.OperaDriver
 
 // Use htmlunit as the default
 // run via “./gradlew htmlunitTest”
@@ -21,7 +23,7 @@ driver = {
 }
 
 waiting {
-	timeout = 2
+	timeout = 30
 }
 
 environments {
@@ -63,11 +65,19 @@ environments {
 	}
 
 	ie {
-		driver = { new InternetExplorerDriver() }
+		driver = { 
+			//new InternetExplorerDriver() 
+			new InternetExplorerDriver().navigate().to("http://google.com/ncr")
+			//new RemoteWebDriver(new URL("http://google.com/ncr"),DesiredCapabilities.internetExplorer())
+		}
 	}
 
 	opera {
-		driver = { new OperaDriver() }
+		driver = { 
+			//new OperaDriver()
+			//new OperaDriver().navigate().to("http://google.com/ncr")
+			new RemoteWebDriver("http://localhost:9515", DesiredCapabilities.opera());
+		}
 	}
 }
 // To run the tests with all browsers just run “./gradlew test”

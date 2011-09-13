@@ -31,10 +31,12 @@ dependencies {
 	
 	// Drivers
 	drivers.each { driver ->
-		testCompile "org.seleniumhq.selenium:selenium-$driver-driver:$seleniumVersion"
+		testCompile("org.seleniumhq.selenium:selenium-$driver-driver:$seleniumVersion")
 	}
-	testCompile "com.opera:operadriver:0.7.3-SNAPSHOT" //opera
-
+	testCompile("com.opera:operadriver:0.7.3-SNAPSHOT"){ //opera
+		transitive = true
+		exclude module:'xml-apis' 
+	}
 }
 drivers.add "opera" //opera
 drivers.each { driver ->
