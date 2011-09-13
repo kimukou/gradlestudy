@@ -11,19 +11,20 @@ buildscript {
     }
     dependencies {
         classpath 'com.jvoegele.gradle.plugins:android-plugin:1.0.0'
+        //classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.7'
     }
 }
 
 repositories {
     //flatDir(dirs: file("$projectDir/libs"))
     mavenCentral()
-		mavenRepo urls: 'http://twitter4j.org/maven2'
+    mavenRepo urls: 'http://twitter4j.org/maven2'
 }
 
 
 dependencies {
     //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.10'
-		compile group:'org.twitter4j', name:'twitter4j-core', version:'[2.2,)'
+    compile group:'org.twitter4j', name:'twitter4j-core', version:'[2.2,)'
     //compile group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
     //runtime group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
 }

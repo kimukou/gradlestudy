@@ -4,8 +4,7 @@ repositories {
 	flatDir name: 'localRepository', dirs: 'lib' 
 	mavenCentral()
 	mavenRepo urls: [ 
-			"https://nexus.codehaus.org/content/repositories/snapshots",
-			"https://github.com/operasoftware/operadriver/tree/master/maven"
+			"https://nexus.codehaus.org/content/repositories/snapshots"
 	]
 }
 
@@ -14,7 +13,7 @@ configurations {
 }
 
 // The drivers we want to use
-drivers = ["htmlunit", "firefox", "chrome","ie"]//,"android"]
+def drivers = ["htmlunit", "firefox", "chrome","ie"]//,"android"]
 
 dependencies {
 	groovy "org.codehaus.groovy:groovy-all:1.7.10"
@@ -34,10 +33,10 @@ dependencies {
 	drivers.each { driver ->
 		testCompile "org.seleniumhq.selenium:selenium-$driver-driver:$seleniumVersion"
 	}
-	testCompile "com.opera:operadriver:0.6"
+	testCompile "com.opera:operadriver:0.7.3-SNAPSHOT" //opera
 
 }
-
+drivers.add "opera" //opera
 drivers.each { driver ->
 	task "${driver}Test"(type: Test) {
 		testReportDir = file("$reportsDir/$name/tests")
