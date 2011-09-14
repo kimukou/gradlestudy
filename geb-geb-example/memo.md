@@ -1,4 +1,4 @@
-ChromeDriverに関するメモ）
+Driverに関するメモ）
 
 ChromDriverの入手先
 	http://chromium.googlecode.com/
@@ -27,3 +27,12 @@ Windows
 
 	ChromePortableはライセンス的に再配布は難しいみたい(Google Chrome自体が)
 	＜Google系のソフトは再配布は基本認めていないよう
+
+
+OperaDriver
+	Win7,VistaだとC:\Program Files配下にはインストールしてはいけないらしい
+	(設定するとプロファイルがセキュリティ違反で見れないとのこと)
+	したがって今回は D:\ToolDev\opera にインストールしたとして設定
+	(インストール開始時に、オプションでインストール先を変える事)
+
+
