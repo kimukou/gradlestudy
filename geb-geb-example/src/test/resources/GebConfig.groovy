@@ -103,7 +103,7 @@ environments {
 			operaCapabilities.setCapability(OperaDriver.LAUNCHER ,"exe/launcher/launcher-win32-i86pc.exe")
 			operaCapabilities.setCapability(OperaDriver.BINARY  ,"d:/ToolDev/Opera/opera.exe")
 			operaCapabilities.setCapability(OperaDriver.ARGUMENTS ,"-nowindow -someothervalue")
-			operaCapabilities.setCapability(OperaDriver.OPERAIDLE ,true)
+			//operaCapabilities.setCapability(OperaDriver.OPERAIDLE ,true)
 			//operaCapabilities.setCapability(OperaDriver.DISPLAY  ,8)
 			new OperaDriver(operaCapabilities)
 
