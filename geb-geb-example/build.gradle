@@ -28,7 +28,8 @@ configurations {
 def drivers = ["htmlunit", "firefox", "chrome","ie"]//,"android"]
 
 dependencies {
-  groovy "org.codehaus.groovy:groovy-all:1.7.10"
+  //groovy "org.codehaus.groovy:groovy-all:1.7.10"
+  groovy "org.codehaus.groovy:groovy-all:1.8.2"
   
   def gebVersion = "0.6.0"
   def seleniumVersion = "latest.release"//"2.0rc3"//"2.3.1"
@@ -36,7 +37,8 @@ dependencies {
   
   // If using Spock, need to depend on geb-spock
   testCompile "org.codehaus.geb:geb-spock:$gebVersion"
-  testCompile "org.spockframework:spock-core:0.5-groovy-1.7"
+  //testCompile "org.spockframework:spock-core:0.5-groovy-1.7"
+  testCompile "org.spockframework:spock-core:0.5-groovy-1.8"
   
   // If using JUnit, need to depend on geb-junit (3 or 4)
   testCompile "org.codehaus.geb:geb-junit4:$gebVersion"
@@ -52,7 +54,7 @@ dependencies {
     }
   }
 //opera setting 
-  testCompile("com.opera:operadriver:0.7.3-SNAPSHOT"){ 
+  testCompile("com.opera:operadriver:0.7.4-SNAPSHOT"){ 
     transitive = true
     exclude module:'xml-apis' 
   }
@@ -71,7 +73,7 @@ drivers.each { driver ->
     
     // If you wanted to set the baseUrl in your build…
     // systemProperty "geb.build.baseUrl", "http://myapp.com"
-    systemProperty "capture.env", false
+    systemProperty "capture.env", "false"
 
     systemProperties "geb.build.baseUrl": "http://www.google.co.jp/"
     systemProperties "groovy.source.encoding":enc
