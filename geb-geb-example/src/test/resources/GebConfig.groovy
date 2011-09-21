@@ -14,6 +14,11 @@ import org.openqa.selenium.remote.RemoteWebDriver
 import com.opera.core.systems.OperaDriver
 import com.opera.core.systems.settings.OperaDriverSettings
 // Use htmlunit as the default
+
+import com.thoughtworks.selenium.DefaultSelenium
+import org.openqa.selenium.remote.CommandExecutor
+import org.openqa.selenium.SeleneseCommandExecutor
+
 // run via “./gradlew htmlunitTest”
 // See: http://code.google.com/p/selenium/wiki/HtmlUnitDriver
 driver = { 
@@ -112,5 +117,17 @@ environments {
 			//new RemoteWebDriver("http://localhost:9515", DesiredCapabilities.opera());
 		}
 	}
+
+	safari{
+		baseURL="http://www.google.co.jp/"
+		def sel = new DefaultSelenium("localhost", 4444, "*safari", baseURL);
+		CommandExecutor executor = new SeleneseCommandExecutor(sel);
+		DesiredCapabilities dc = new DesiredCapabilities();
+		dc.setBrowserName("safari")
+		dc.setCapability("platform" ,org.openqa.selenium.Platform.WINDOWS)
+		dc.setJavascriptEnabled(true);
+		new RemoteWebDriver(executor, dc);
+	}
+
 }
 // To run the tests with all browsers just run “./gradlew test”
