@@ -2,6 +2,8 @@
 class CaptureUtil{
 
 	public static boolean capture(String outputDir) throws Exception {
+		if(System.getProperty("capture.env")=="false")return true
+
 		if(!new File(outputDir).exists())new File(outputDir).mkdirs()
 		// キャプラ起動オプション
 		// /C3 - ウィンドウまたはコントロール

@@ -1,4 +1,4 @@
-ChromeDriverに関するメモ）
+Driverに関するメモ）
 
 ChromDriverの入手先
 	http://chromium.googlecode.com/
@@ -27,3 +27,25 @@ Windows
 
 	ChromePortableはライセンス的に再配布は難しいみたい(Google Chrome自体が)
 	＜Google系のソフトは再配布は基本認めていないよう
+
+
+OperaDriver
+	ここからコンパイル
+		https://github.com/operasoftware/operadriver/
+
+	Win7,VistaだとC:\Program Files配下にはインストールしてはいけないらしい
+	(設定するとプロファイルがセキュリティ違反で見れないとのこと)
+	したがって今回は D:\ToolDev\opera にインストールしたとして設定
+	(インストール開始時に、オプションでインストール先を変える事)
+
+
+SafariDriver
+	ここからコンパイル？（macしかできないかも）
+		https://github.com/shs96c/webdriver
+
+	remote dirverで試す
+		http://darrellgrainger.blogspot.com/2011/02/using-selenium-20-with-webdriver-and.html
+
+AndroidDriver
+	課題系
+		http://code.google.com/p/selenium/wiki/AndroidDriver

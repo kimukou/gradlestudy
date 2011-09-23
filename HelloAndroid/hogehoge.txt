@@ -1,0 +1,1080 @@
+15:03:45.628 [INFO] [org.gradle.BuildLogger] Starting Build
+15:03:45.632 [DEBUG] [org.gradle.BuildLogger] Gradle user home: C:\Users\ksc\.gradle
+15:03:45.633 [DEBUG] [org.gradle.BuildLogger] Current dir: D:\workspace36\_github\gradlestudy\HelloAndroid
+15:03:45.633 [DEBUG] [org.gradle.BuildLogger] Settings file: null
+15:03:45.634 [DEBUG] [org.gradle.BuildLogger] Build file: null
+15:03:45.636 [DEBUG] [org.gradle.BuildLogger] Select default project: with project directory 'D:\workspace36\_github\gradlestudy\HelloAndroid'
+15:03:45.647 [DEBUG] [org.gradle.initialization.BuildSourceBuilder] Starting to build the build sources.
+15:03:45.648 [DEBUG] [org.gradle.initialization.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+15:03:45.650 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+15:03:45.650 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+15:03:46.078 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.427 secs
+15:03:46.079 [INFO] [org.gradle.BuildLogger] Settings evaluated using empty settings file.
+15:03:46.152 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: D:\workspace36\_github\gradlestudy\HelloAndroid\gradle.properties
+15:03:46.153 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Adding project properties (if not overwritten by user properties): [sdk.dir]
+15:03:46.182 [INFO] [org.gradle.BuildLogger] Projects loaded. Root project using build file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build.gradle'.
+15:03:46.183 [INFO] [org.gradle.BuildLogger] Included projects: [root project 'HelloAndroid']
+15:03:46.184 [INFO] [org.gradle.configuration.BuildScriptProcessor] Evaluating root project 'HelloAndroid' using build file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build.gradle'.
+15:03:46.364 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.settings.dir' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+15:03:46.366 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.basedir' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\.'
+15:03:46.367 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.conf.dir' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+15:03:46.403 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.name' to 'Java(TM) SE Runtime Environment'
+15:03:46.404 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.library.path' to 'C:\opt\jdk\jre\bin'
+15:03:46.404 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.version' to '20.2-b06'
+15:03:46.404 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.vendor' to 'Sun Microsystems Inc.'
+15:03:46.405 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url' to 'http://java.sun.com/'
+15:03:46.405 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'path.separator' to ';'
+15:03:46.406 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.name' to 'Java HotSpot(TM) Client VM'
+15:03:46.406 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding.pkg' to 'sun.io'
+15:03:46.406 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.launcher' to 'SUN_STANDARD'
+15:03:46.407 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.country' to 'JP'
+15:03:46.407 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.os.patch.level' to 'Service Pack 1'
+15:03:46.408 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+15:03:46.408 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.dir' to 'D:\workspace36\_github\gradlestudy\HelloAndroid'
+15:03:46.408 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.version' to '1.6.0_27-b07'
+15:03:46.409 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.graphicsenv' to 'sun.awt.Win32GraphicsEnvironment'
+15:03:46.409 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.endorsed.dirs' to 'C:\opt\jdk\jre\lib\endorsed'
+15:03:46.410 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.arch' to 'x86'
+15:03:46.410 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.io.tmpdir' to 'D:\Temp\'
+15:03:46.411 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'line.separator' to '
+'
+15:03:46.411 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'org.gradle.wrapper.properties' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\\gradle\wrapper\gradle-wrapper.properties'
+15:03:46.411 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.vendor' to 'Sun Microsystems Inc.'
+15:03:46.412 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.variant' to ''
+15:03:46.412 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.name' to 'Windows 7'
+15:03:46.412 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.boot.library.path' to 'C:\Users\ksc\.gradle\jna'
+15:03:46.413 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.jnu.encoding' to 'MS932'
+15:03:46.413 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.library.path' to 'C:\opt\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\opt\jdk/bin;D:\ToolDev\gradle-1.0-milestone-4\bin;D:\ToolDev\Git/bin;D:\Tooldev\apache-maven-3.0.3/bin;D:\Tooldev\ant/bin;D:/Tooldev/android-sdk-windows/platform-tools;D:/Tooldev/android-sdk-windows/tools;D:\Tooldev\appengine-java-sdk-1.5.3/bin;.'
+15:03:46.414 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.name' to 'Java Platform API Specification'
+15:03:46.414 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.version' to '50.0'
+15:03:46.414 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.management.compiler' to 'HotSpot Client Compiler'
+15:03:46.415 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.version' to '6.1'
+15:03:46.415 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.home' to 'C:\Users\ksc'
+15:03:46.415 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.timezone' to 'Asia/Tokyo'
+15:03:46.416 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.printerjob' to 'sun.awt.windows.WPrinterJob'
+15:03:46.416 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding' to 'UTF-8'
+15:03:46.416 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.version' to '1.6'
+15:03:46.417 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.path' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\\gradle\wrapper\gradle-wrapper.jar'
+15:03:46.417 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.name' to 'ksc'
+15:03:46.417 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.version' to '1.0'
+15:03:46.418 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.command' to 'org.gradle.wrapper.GradleWrapperMain clean configureDebug androidInstall --debug'
+15:03:46.418 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.home' to 'C:\opt\jdk\jre'
+15:03:46.418 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.arch.data.model' to '32'
+15:03:46.419 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'groovy.source.encoding' to 'UTF-8'
+15:03:46.419 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.language' to 'ja'
+15:03:46.419 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.vendor' to 'Sun Microsystems Inc.'
+15:03:46.420 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'awt.toolkit' to 'sun.awt.windows.WToolkit'
+15:03:46.420 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.info' to 'mixed mode, sharing'
+15:03:46.420 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.version' to '1.6.0_27'
+15:03:46.421 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.ext.dirs' to 'C:\opt\jdk\jre\lib\ext;C:\Windows\Sun\Java\lib\ext'
+15:03:46.421 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.class.path' to 'C:\opt\jdk\jre\lib\resources.jar;C:\opt\jdk\jre\lib\rt.jar;C:\opt\jdk\jre\lib\sunrsasign.jar;C:\opt\jdk\jre\lib\jsse.jar;C:\opt\jdk\jre\lib\jce.jar;C:\opt\jdk\jre\lib\charsets.jar;C:\opt\jdk\jre\lib\modules\jdk.boot.jar;C:\opt\jdk\jre\classes'
+15:03:46.421 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor' to 'Sun Microsystems Inc.'
+15:03:46.422 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.separator' to '\'
+15:03:46.422 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url.bug' to 'http://java.sun.com/cgi-bin/bugreport.cgi'
+15:03:46.422 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+15:03:46.423 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.endian' to 'little'
+15:03:46.423 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.desktop' to 'windows'
+15:03:46.423 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.isalist' to 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86'
+15:03:46.428 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.cache.dir' to 'C:\Users\ksc\.gradle\caches\artifacts'
+15:03:46.430 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.log.modules.in.use' to 'false'
+15:03:46.441 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultSettingsConverter] Timing: Ivy convert for resolve took 0.098 secs
+15:03:46.476 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.settings.dir' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+15:03:46.477 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.basedir' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\.'
+15:03:46.477 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.conf.dir' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.name' to 'Java(TM) SE Runtime Environment'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.library.path' to 'C:\opt\jdk\jre\bin'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.version' to '20.2-b06'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.vendor' to 'Sun Microsystems Inc.'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url' to 'http://java.sun.com/'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'path.separator' to ';'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.name' to 'Java HotSpot(TM) Client VM'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding.pkg' to 'sun.io'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.launcher' to 'SUN_STANDARD'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.country' to 'JP'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.os.patch.level' to 'Service Pack 1'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.dir' to 'D:\workspace36\_github\gradlestudy\HelloAndroid'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.version' to '1.6.0_27-b07'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.graphicsenv' to 'sun.awt.Win32GraphicsEnvironment'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.endorsed.dirs' to 'C:\opt\jdk\jre\lib\endorsed'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.arch' to 'x86'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.io.tmpdir' to 'D:\Temp\'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'line.separator' to '
+'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'org.gradle.wrapper.properties' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\\gradle\wrapper\gradle-wrapper.properties'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.vendor' to 'Sun Microsystems Inc.'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.variant' to ''
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.name' to 'Windows 7'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.boot.library.path' to 'C:\Users\ksc\.gradle\jna'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.jnu.encoding' to 'MS932'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.library.path' to 'C:\opt\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\opt\jdk/bin;D:\ToolDev\gradle-1.0-milestone-4\bin;D:\ToolDev\Git/bin;D:\Tooldev\apache-maven-3.0.3/bin;D:\Tooldev\ant/bin;D:/Tooldev/android-sdk-windows/platform-tools;D:/Tooldev/android-sdk-windows/tools;D:\Tooldev\appengine-java-sdk-1.5.3/bin;.'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.name' to 'Java Platform API Specification'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.version' to '50.0'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.management.compiler' to 'HotSpot Client Compiler'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.version' to '6.1'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.home' to 'C:\Users\ksc'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.timezone' to 'Asia/Tokyo'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.printerjob' to 'sun.awt.windows.WPrinterJob'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding' to 'UTF-8'
+15:03:46.478 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.version' to '1.6'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.path' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\\gradle\wrapper\gradle-wrapper.jar'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.name' to 'ksc'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.version' to '1.0'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.command' to 'org.gradle.wrapper.GradleWrapperMain clean configureDebug androidInstall --debug'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.home' to 'C:\opt\jdk\jre'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.arch.data.model' to '32'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'groovy.source.encoding' to 'UTF-8'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.language' to 'ja'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.vendor' to 'Sun Microsystems Inc.'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'awt.toolkit' to 'sun.awt.windows.WToolkit'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.info' to 'mixed mode, sharing'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.version' to '1.6.0_27'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.ext.dirs' to 'C:\opt\jdk\jre\lib\ext;C:\Windows\Sun\Java\lib\ext'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.class.path' to 'C:\opt\jdk\jre\lib\resources.jar;C:\opt\jdk\jre\lib\rt.jar;C:\opt\jdk\jre\lib\sunrsasign.jar;C:\opt\jdk\jre\lib\jsse.jar;C:\opt\jdk\jre\lib\jce.jar;C:\opt\jdk\jre\lib\charsets.jar;C:\opt\jdk\jre\lib\modules\jdk.boot.jar;C:\opt\jdk\jre\classes'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor' to 'Sun Microsystems Inc.'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.separator' to '\'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url.bug' to 'http://java.sun.com/cgi-bin/bugreport.cgi'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.endian' to 'little'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.desktop' to 'windows'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.isalist' to 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86'
+15:03:46.494 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] :: loading settings :: url = jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.settings.url' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings/ivysettings.xml'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.conf.url' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings/ivysettings.xml'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.settings.dir' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.conf.dir' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.ivy.user.dir' to 'C:\Users\ksc\.ivy2'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.home' to 'C:\Users\ksc\.ivy2'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] no default ivy user dir defined: set to C:\Users\ksc\.ivy2
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.log.modules.in.use' to 'false'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.resolver.default.check.modified' to 'false'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.always.check.exact.revision' to 'false'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.retrieve.pattern' to '${ivy.lib.dir}/[artifact]-[revision](-[classifier]).[ext]'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.configurations' to '*'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.buildlist.ivyfilepath' to 'ivy.xml'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.status' to 'integration'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.resolve.default.type.filter' to '*'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.project.dir' to '${basedir}'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.dep.file' to 'ivy.xml'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.settings.file' to 'ivysettings.xml'
+15:03:46.494 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.report.output.pattern' to '[organisation]-[module]-[conf].[ext]'
+15:03:46.509 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.cache.ttl.default' to '10s'
+15:03:46.509 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.publish.src.artifacts.pattern' to '${ivy.distrib.dir}/[type]s/[artifact]-[revision](-[classifier]).[ext]'
+15:03:46.509 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.deliver.ivy.pattern' to '${ivy.distrib.dir}/[type]s/[artifact]-[revision](-[classifier]).[ext]'
+15:03:46.509 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.build.artifacts.dir' to '${ivy.project.dir}/build/artifacts'
+15:03:46.509 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.checksums' to 'sha1,md5'
+15:03:46.509 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.distrib.dir' to '${ivy.project.dir}/distrib'
+15:03:46.509 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.lib.dir' to '${ivy.project.dir}/lib'
+15:03:46.525 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] including url: jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+15:03:46.540 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.cache.dir' to 'C:\Users\ksc\.ivy2\cache'
+15:03:46.540 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] no default cache defined: set to C:\Users\ksc\.ivy2\cache
+15:03:46.540 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no namespace defined: using system
+15:03:46.540 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no latest strategy defined: using default
+15:03:46.540 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] including url: jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+15:03:46.540 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.shared.default.root' to 'C:\Users\ksc\.ivy2/shared'
+15:03:46.540 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.shared.default.ivy.pattern' to '[organisation]/[module]/[revision]/[type]s/[artifact].[ext]'
+15:03:46.540 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.shared.default.artifact.pattern' to '[organisation]/[module]/[revision]/[type]s/[artifact].[ext]'
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] including url: jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.local.default.root' to 'C:\Users\ksc\.ivy2/local'
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.local.default.ivy.pattern' to '[organisation]/[module]/[revision]/[type]s/[artifact].[ext]'
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.local.default.artifact.pattern' to '[organisation]/[module]/[revision]/[type]s/[artifact].[ext]'
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] local: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] local: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] including url: jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] local: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] local: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] main: no namespace defined: using system
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] main: no latest strategy defined: using default
+15:03:46.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] including url: jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] default: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] default: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] local: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] local: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] main: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] main: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] shared: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] default: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] default: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] local: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] local: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] public: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] main: no namespace defined: using system
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] main: no latest strategy defined: using default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 'ivy.default.ivy.user.dir' already set: discarding 'C:\Users\ksc\.ivy2'
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] settings loaded (78ms)
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	default cache: C:\Users\ksc\.ivy2\cache
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	default resolver: default
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	default latest strategy: latest-revision
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	default conflict manager: latest-revision
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	circular dependency strategy: warn
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	validate: true
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	check up2date: true
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	-- 5 resolvers:
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	shared [file]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		cache: null
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		m2compatible: false
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		ivy patterns:
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 			C:\Users\ksc\.ivy2/shared/[organisation]/[module]/[revision]/[type]s/[artifact].[ext]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		artifact patterns:
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 			C:\Users\ksc\.ivy2/shared/[organisation]/[module]/[revision]/[type]s/[artifact].[ext]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		repository: shared
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	default [chain] [local, main]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		return first: true
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		dual: false
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		-> local
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		-> main
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	local [file]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		cache: null
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		m2compatible: false
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		ivy patterns:
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 			C:\Users\ksc\.ivy2/local/[organisation]/[module]/[revision]/[type]s/[artifact].[ext]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		artifact patterns:
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 			C:\Users\ksc\.ivy2/local/[organisation]/[module]/[revision]/[type]s/[artifact].[ext]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		repository: local
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	public [ibiblio]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		cache: null
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		m2compatible: true
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		ivy patterns:
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 			http://repo1.maven.org/maven2/[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		artifact patterns:
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 			http://repo1.maven.org/maven2/[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		repository: public
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		root: http://repo1.maven.org/maven2/
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		pattern: [organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		usepoms: true
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		useMavenMetadata: true
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	main [chain] [shared, public]
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		return first: false
+15:03:46.572 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		dual: true
+15:03:46.587 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		-> shared
+15:03:46.587 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		-> public
+15:03:46.587 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	module settings:
+15:03:46.587 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		NONE
+15:03:46.587 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.moduleconverter.ResolveModuleDescriptorConverter] Timing: Ivy convert for resolve took 0.122 secs
+15:03:46.587 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.moduleconverter.PublishModuleDescriptorConverter] Timing: Ivy convert for publish took 0.122 secs
+15:03:46.587 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] :: resolving dependencies :: #HelloAndroid;unspecified
+15:03:46.587 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	confs: [classpath]
+15:03:46.587 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	validate = true
+15:03:46.587 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	refresh = false
+15:03:46.603 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] resolving dependencies for configuration 'classpath'
+15:03:46.603 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies for #HelloAndroid;unspecified [classpath]
+15:03:46.603 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of #HelloAndroid;unspecified of rootConf=classpath
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;unspecified->com.jvoegele.gradle.plugins#android-plugin;1.0.0 [classpath->default]
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of com.jvoegele.gradle.plugins#android-plugin;1.0.0 of rootConf=classpath
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	using clientModuleChain to resolve com.jvoegele.gradle.plugins#android-plugin;1.0.0
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] clientModuleChain: Checking cache for: dependency: com.jvoegele.gradle.plugins#android-plugin;1.0.0 {classpath=[default]}
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] clientModuleChain: no namespace defined: using system
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] clientModuleChain: no latest strategy defined: using default
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] chain: Checking cache for: dependency: com.jvoegele.gradle.plugins#android-plugin;1.0.0 {classpath=[default]}
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] chain: no namespace defined: using system
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] chain: no latest strategy defined: using default
+15:03:46.618 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] http://jvoegele.com/maven2/: no namespace defined: using system
+15:03:46.665 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] No entry is found in the ModuleDescriptorCache : C:\Users\ksc\.gradle\caches\artifacts\com.jvoegele.gradle.plugins\android-plugin\12cedf7bf9cb2ba6811820e67421fdf5\ivy-1.0.0.xml
+15:03:46.681 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'file:/C:/Users/ksc/.gradle/caches/artifacts/com.jvoegele.gradle.plugins/android-plugin/12cedf7bf9cb2ba6811820e67421fdf5/ivy-1.0.0.xml.sha1'
+15:03:46.681 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'file:/C:/Users/ksc/.gradle/caches/artifacts/com.jvoegele.gradle.plugins/android-plugin/12cedf7bf9cb2ba6811820e67421fdf5/ivy-1.0.0.xml.md5'
+15:03:46.728 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	found ivy file in cache for com.jvoegele.gradle.plugins#android-plugin;1.0.0 (resolved by http://jvoegele.com/maven2/): C:\Users\ksc\.gradle\caches\artifacts\com.jvoegele.gradle.plugins\android-plugin\12cedf7bf9cb2ba6811820e67421fdf5\ivy-1.0.0.xml
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	http://jvoegele.com/maven2/: revision in cache: com.jvoegele.gradle.plugins#android-plugin;1.0.0
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	checking com.jvoegele.gradle.plugins#android-plugin;1.0.0 from http://jvoegele.com/maven2/ against [none]
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	module revision kept as first found: com.jvoegele.gradle.plugins#android-plugin;1.0.0 from http://jvoegele.com/maven2/
+15:03:46.743 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	found com.jvoegele.gradle.plugins#android-plugin;1.0.0 in http://jvoegele.com/maven2/
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;unspecified->com.jvoegele.gradle.plugins#android-plugin;1.0.0 [classpath->runtime]
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of com.jvoegele.gradle.plugins#android-plugin;1.0.0 of rootConf=classpath
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;unspecified->com.jvoegele.gradle.plugins#android-plugin;1.0.0 [classpath->compile]
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of com.jvoegele.gradle.plugins#android-plugin;1.0.0 of rootConf=classpath
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;unspecified->com.jvoegele.gradle.plugins#android-plugin;1.0.0 [classpath->master]
+15:03:46.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of com.jvoegele.gradle.plugins#android-plugin;1.0.0 of rootConf=classpath
+15:03:46.759 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Nbr of module to sort : 1
+15:03:46.759 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort dependencies of : com.jvoegele.gradle.plugins#android-plugin;1.0.0 / Number of dependencies = 0
+15:03:46.759 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort done for : com.jvoegele.gradle.plugins#android-plugin;1.0.0
+15:03:46.759 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	resolved ivy file produced in C:\Users\ksc\.gradle\caches\artifacts\resolved--HelloAndroid-unspecified.xml
+15:03:46.759 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] :: resolution report :: resolve 172ms :: artifacts dl 0ms
+15:03:46.759 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:03:46.759 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|                  |            modules            ||   artifacts   |
+15:03:46.759 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+15:03:46.759 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:03:46.759 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|     classpath    |   1   |   0   |   0   |   0   ||   0   |   0   |
+15:03:46.759 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:03:46.774 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Nbr of module to sort : 1
+15:03:46.774 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort dependencies of : com.jvoegele.gradle.plugins#android-plugin;1.0.0 / Number of dependencies = 0
+15:03:46.774 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort done for : com.jvoegele.gradle.plugins#android-plugin;1.0.0
+15:03:46.774 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	report for #HelloAndroid;unspecified classpath produced in C:\Users\ksc\.gradle\caches\artifacts\-HelloAndroid-classpath.xml
+15:03:46.774 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	resolve done (172ms resolve - 0ms download)
+15:03:46.774 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultIvyDependencyResolver] Timing: Ivy resolve took 0.187 secs
+15:03:46.774 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultIvyReportConverter] Timing: Translating report for configuration configuration ':classpath' took 0.0 secs
+15:03:46.790 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	[NOT REQUIRED] null
+15:03:46.790 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	[NOT REQUIRED] com.jvoegele.gradle.plugins#android-plugin;1.0.0!android-plugin.jar
+15:03:47.728 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] parsing buildfile jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ant-1.8.2.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ant-1.8.2.jar!/org/apache/tools/ant/antlib.xml from a zip file
+15:03:47.752 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:property] Loading D:\workspace36\_github\gradlestudy\HelloAndroid\local.properties
+15:03:47.753 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: sdk.dir -> D:\Tooldev\android-sdk-windows
+15:03:47.754 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:property] Loading D:\workspace36\_github\gradlestudy\HelloAndroid\build.properties
+15:03:47.754 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: key.alias -> androiddebugkey
+15:03:47.755 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: key.store -> debug.keystore
+15:03:47.755 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:property] Loading D:\workspace36\_github\gradlestudy\HelloAndroid\default.properties
+15:03:47.755 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: target -> android-4
+15:03:47.784 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Adding reference: android.antlibs
+15:03:47.805 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.taskdefs.condition.Os loaded from parent loader (parentFirst)
+15:03:47.807 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Condition true; setting exe to .exe
+15:03:47.807 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: exe -> .exe
+15:03:47.808 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: adb -> D:\Tooldev\android-sdk-windows\platform-tools\adb.exe
+15:03:47.809 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: zipalign -> D:\Tooldev\android-sdk-windows\tools\zipalign.exe
+15:03:47.809 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: adb.device.arg -> 
+15:03:47.810 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: resource.package.file.name -> HelloAndroid.ap_
+15:03:47.814 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] dropping D:\Tooldev\android-sdk-windows\tools\lib\apkbuilder.jar from path as it doesn't exist
+15:03:47.814 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] dropping D:\Tooldev\android-sdk-windows\tools\lib\jarutils.jar from path as it doesn't exist
+15:03:47.818 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.SetupTask
+15:03:47.819 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/SetupTask.class
+15:03:47.821 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.taskdefs.ImportTask loaded from parent loader (parentFirst)
+15:03:47.821 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.SetupTask loaded from ant loader (parentFirst)
+15:03:47.822 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Object loaded from parent loader (parentFirst)
+15:03:47.823 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Throwable loaded from parent loader (parentFirst)
+15:03:47.823 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.BuildException loaded from parent loader (parentFirst)
+15:03:47.824 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.ISdkLog
+15:03:47.825 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/ISdkLog.class
+15:03:47.825 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.ISdkLog loaded from ant loader (parentFirst)
+15:03:47.826 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.IOException loaded from parent loader (parentFirst)
+15:03:47.826 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.io.IAbstractFolder
+15:03:47.826 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\common.jar com/android/io/IAbstractFolder.class
+15:03:47.827 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.io.IAbstractResource
+15:03:47.827 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\common.jar com/android/io/IAbstractResource.class
+15:03:47.828 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.io.IAbstractResource loaded from ant loader (parentFirst)
+15:03:47.828 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.io.IAbstractFolder loaded from ant loader (parentFirst)
+15:03:47.828 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.SetupTask$IPropertySource
+15:03:47.828 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/SetupTask$IPropertySource.class
+15:03:47.829 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.SetupTask$IPropertySource loaded from ant loader (parentFirst)
+15:03:47.829 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Exception loaded from parent loader (parentFirst)
+15:03:47.829 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.FilenameFilter loaded from parent loader (parentFirst)
+15:03:47.830 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.io.IAbstractFile
+15:03:47.830 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\common.jar com/android/io/IAbstractFile.class
+15:03:47.830 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.io.IAbstractFile loaded from ant loader (parentFirst)
+15:03:47.830 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.FileNotFoundException loaded from parent loader (parentFirst)
+15:03:47.831 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class javax.xml.xpath.XPathExpressionException loaded from parent loader (parentFirst)
+15:03:47.831 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.NumberFormatException loaded from parent loader (parentFirst)
+15:03:47.831 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.InputStream loaded from parent loader (parentFirst)
+15:03:47.832 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.FileInputStream loaded from parent loader (parentFirst)
+15:03:47.832 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter]  +Datatype setup com.android.ant.SetupTask
+15:03:47.833 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.Project loaded from parent loader (parentFirst)
+15:03:47.833 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.String loaded from parent loader (parentFirst)
+15:03:47.833 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.StringBuffer loaded from parent loader (parentFirst)
+15:03:47.833 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Character loaded from parent loader (parentFirst)
+15:03:47.834 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.util.DeweyDecimal loaded from parent loader (parentFirst)
+15:03:47.835 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.TaskHelper
+15:03:47.835 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/TaskHelper.class
+15:03:47.835 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.TaskHelper loaded from ant loader (parentFirst)
+15:03:47.835 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.File loaded from parent loader (parentFirst)
+15:03:47.836 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.StringBuilder loaded from parent loader (parentFirst)
+15:03:47.836 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.Properties loaded from parent loader (parentFirst)
+15:03:47.836 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Integer loaded from parent loader (parentFirst)
+15:03:47.837 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.System loaded from parent loader (parentFirst)
+15:03:47.837 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.PrintStream loaded from parent loader (parentFirst)
+15:03:47.837 [QUIET] [system.out] Android SDK Tools Revision 12
+15:03:47.838 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.ArrayList loaded from parent loader (parentFirst)
+15:03:47.838 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.SetupTask$1
+15:03:47.839 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/SetupTask$1.class
+15:03:47.839 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.SetupTask$1 loaded from ant loader (parentFirst)
+15:03:47.840 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.SdkManager
+15:03:47.840 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/SdkManager.class
+15:03:47.841 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.SdkManager loaded from ant loader (parentFirst)
+15:03:47.841 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.AndroidVersion$AndroidVersionException
+15:03:47.841 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/AndroidVersion$AndroidVersionException.class
+15:03:47.842 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.AndroidVersion$AndroidVersionException loaded from ant loader (parentFirst)
+15:03:47.842 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.CharSequence loaded from parent loader (parentFirst)
+15:03:47.843 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.AssertionError loaded from parent loader (parentFirst)
+15:03:47.843 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.Map loaded from parent loader (parentFirst)
+15:03:47.843 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.RuntimeException loaded from parent loader (parentFirst)
+15:03:47.844 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.List loaded from parent loader (parentFirst)
+15:03:47.844 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.IllegalArgumentException loaded from parent loader (parentFirst)
+15:03:47.844 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Class loaded from parent loader (parentFirst)
+15:03:47.844 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.regex.Pattern loaded from parent loader (parentFirst)
+15:03:47.845 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.io.FileWrapper
+15:03:47.845 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\common.jar com/android/io/FileWrapper.class
+15:03:47.846 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.io.FileWrapper loaded from ant loader (parentFirst)
+15:03:47.846 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.io.StreamException
+15:03:47.847 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\common.jar com/android/io/StreamException.class
+15:03:47.847 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.io.StreamException loaded from ant loader (parentFirst)
+15:03:47.847 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.OutputStream loaded from parent loader (parentFirst)
+15:03:47.847 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.FileOutputStream loaded from parent loader (parentFirst)
+15:03:47.848 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.internal.project.ProjectProperties
+15:03:47.848 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/internal/project/ProjectProperties.class
+15:03:47.849 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.internal.project.ProjectProperties loaded from ant loader (parentFirst)
+15:03:47.849 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.Collection loaded from parent loader (parentFirst)
+15:03:47.849 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.Set loaded from parent loader (parentFirst)
+15:03:47.850 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.Reader loaded from parent loader (parentFirst)
+15:03:47.850 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.InputStreamReader loaded from parent loader (parentFirst)
+15:03:47.850 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.BufferedReader loaded from parent loader (parentFirst)
+15:03:47.850 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.HashMap loaded from parent loader (parentFirst)
+15:03:47.851 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.regex.Matcher loaded from parent loader (parentFirst)
+15:03:47.852 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.SdkConstants
+15:03:47.852 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/SdkConstants.class
+15:03:47.853 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.SdkConstants loaded from ant loader (parentFirst)
+15:03:47.854 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.PlatformTarget
+15:03:47.855 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/PlatformTarget.class
+15:03:47.855 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.IAndroidTarget
+15:03:47.855 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/IAndroidTarget.class
+15:03:47.856 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Comparable loaded from parent loader (parentFirst)
+15:03:47.856 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.IAndroidTarget loaded from ant loader (parentFirst)
+15:03:47.856 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.PlatformTarget loaded from ant loader (parentFirst)
+15:03:47.857 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.util.SparseArray
+15:03:47.858 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/util/SparseArray.class
+15:03:47.858 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.util.SparseArray loaded from ant loader (parentFirst)
+15:03:47.859 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.util.ArrayUtils
+15:03:47.859 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/util/ArrayUtils.class
+15:03:47.859 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.util.ArrayUtils loaded from ant loader (parentFirst)
+15:03:47.860 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.Collections loaded from parent loader (parentFirst)
+15:03:47.860 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.AndroidVersion
+15:03:47.860 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/AndroidVersion.class
+15:03:47.861 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.AndroidVersion loaded from ant loader (parentFirst)
+15:03:47.875 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.util.Pair
+15:03:47.875 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\common.jar com/android/util/Pair.class
+15:03:47.876 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.util.Pair loaded from ant loader (parentFirst)
+15:03:47.877 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.AddOnTarget
+15:03:47.877 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/AddOnTarget.class
+15:03:47.878 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.AddOnTarget loaded from ant loader (parentFirst)
+15:03:47.878 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.FileFilter loaded from parent loader (parentFirst)
+15:03:47.879 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.IAndroidTarget$IOptionalLibrary
+15:03:47.879 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/IAndroidTarget$IOptionalLibrary.class
+15:03:47.879 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.IAndroidTarget$IOptionalLibrary loaded from ant loader (parentFirst)
+15:03:47.879 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.Iterator loaded from parent loader (parentFirst)
+15:03:47.880 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.Map$Entry loaded from parent loader (parentFirst)
+15:03:47.880 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.AddOnTarget$OptionalLibrary
+15:03:47.880 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/AddOnTarget$OptionalLibrary.class
+15:03:47.880 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.AddOnTarget$OptionalLibrary loaded from ant loader (parentFirst)
+15:03:47.881 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.HashSet loaded from parent loader (parentFirst)
+15:03:47.881 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.Arrays loaded from parent loader (parentFirst)
+15:03:47.891 [QUIET] [system.out] Project Target: Android 1.6
+15:03:47.891 [QUIET] [system.out] API level: 4
+15:03:47.891 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.types.Path loaded from parent loader (parentFirst)
+15:03:47.891 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.SetupTask$2
+15:03:47.892 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/SetupTask$2.class
+15:03:47.892 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.SetupTask$2 loaded from ant loader (parentFirst)
+15:03:47.892 [QUIET] [system.out] 
+------------------
+Resolving library dependencies:
+15:03:47.893 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.SetupTask$3
+15:03:47.893 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/SetupTask$3.class
+15:03:47.893 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.SetupTask$3 loaded from ant loader (parentFirst)
+15:03:47.893 [QUIET] [system.out] No library dependencies.
+
+15:03:47.894 [QUIET] [system.out] ------------------
+
+15:03:47.894 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Adding reference: project.libraries.src
+15:03:47.894 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Adding reference: project.libraries.jars
+15:03:47.894 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Adding reference: project.libraries.libs
+15:03:47.894 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.xml.AndroidXPathFactory
+15:03:47.895 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/xml/AndroidXPathFactory.class
+15:03:47.895 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.xml.AndroidXPathFactory loaded from ant loader (parentFirst)
+15:03:47.895 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class javax.xml.namespace.NamespaceContext loaded from parent loader (parentFirst)
+15:03:47.896 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class javax.xml.xpath.XPathFactory loaded from parent loader (parentFirst)
+15:03:47.898 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.xml.AndroidXPathFactory$AndroidNamespaceContext
+15:03:47.898 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/xml/AndroidXPathFactory$AndroidNamespaceContext.class
+15:03:47.899 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.xml.AndroidXPathFactory$AndroidNamespaceContext loaded from ant loader (parentFirst)
+15:03:47.899 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class javax.xml.xpath.XPath loaded from parent loader (parentFirst)
+15:03:47.899 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.xml.sax.InputSource loaded from parent loader (parentFirst)
+15:03:47.926 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: android.jar -> D:\Tooldev\android-sdk-windows\platforms\android-4\android.jar
+15:03:47.926 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: android.aidl -> D:\Tooldev\android-sdk-windows\platforms\android-4\framework.aidl
+15:03:47.926 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.types.Path$PathElement loaded from parent loader (parentFirst)
+15:03:47.927 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: android.rs -> D:\Tooldev\android-sdk-windows\platforms\android-4\renderscript\include;D:\Tooldev\android-sdk-windows\platforms\android-4\renderscript\clang-include
+15:03:47.927 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: aapt -> D:\Tooldev\android-sdk-windows\platform-tools\aapt.exe
+15:03:47.927 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: aidl -> D:\Tooldev\android-sdk-windows\platform-tools\aidl.exe
+15:03:47.927 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: dx -> D:\Tooldev\android-sdk-windows\platform-tools\dx.bat
+15:03:47.927 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: renderscript -> D:\Tooldev\android-sdk-windows\platform-tools\llvm-rs-cc.exe
+15:03:47.928 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Adding reference: android.target.classpath
+15:03:47.929 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] dropping D:\Tooldev\android-sdk-windows\tools\lib\apkbuilder.jar from path as it doesn't exist
+15:03:47.929 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] dropping D:\Tooldev\android-sdk-windows\tools\lib\jarutils.jar from path as it doesn't exist
+15:03:47.931 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.XPathTask
+15:03:47.931 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/XPathTask.class
+15:03:47.932 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.Task loaded from parent loader (parentFirst)
+15:03:47.932 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.XPathTask loaded from ant loader (parentFirst)
+15:03:47.932 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Object loaded from parent loader (parentFirst)
+15:03:47.932 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Throwable loaded from parent loader (parentFirst)
+15:03:47.933 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.FileNotFoundException loaded from parent loader (parentFirst)
+15:03:47.933 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class javax.xml.xpath.XPathExpressionException loaded from parent loader (parentFirst)
+15:03:47.933 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.BuildException loaded from parent loader (parentFirst)
+15:03:47.933 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.InputStream loaded from parent loader (parentFirst)
+15:03:47.933 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.FileInputStream loaded from parent loader (parentFirst)
+15:03:47.934 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter]  +Datatype xpath com.android.ant.XPathTask
+15:03:47.935 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] dropping D:\Tooldev\android-sdk-windows\tools\lib\apkbuilder.jar from path as it doesn't exist
+15:03:47.935 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] dropping D:\Tooldev\android-sdk-windows\tools\lib\jarutils.jar from path as it doesn't exist
+15:03:47.936 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.AaptExecLoopTask
+15:03:47.937 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/AaptExecLoopTask.class
+15:03:47.937 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.Task loaded from parent loader (parentFirst)
+15:03:47.938 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.AaptExecLoopTask loaded from ant loader (parentFirst)
+15:03:47.938 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Object loaded from parent loader (parentFirst)
+15:03:47.939 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Throwable loaded from parent loader (parentFirst)
+15:03:47.939 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.NumberFormatException loaded from parent loader (parentFirst)
+15:03:47.939 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter]  +Datatype aaptexec com.android.ant.AaptExecLoopTask
+15:03:47.940 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] dropping D:\Tooldev\android-sdk-windows\tools\lib\apkbuilder.jar from path as it doesn't exist
+15:03:47.940 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] dropping D:\Tooldev\android-sdk-windows\tools\lib\jarutils.jar from path as it doesn't exist
+15:03:47.942 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.ant.ApkBuilderTask
+15:03:47.942 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\anttasks.jar com/android/ant/ApkBuilderTask.class
+15:03:47.943 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.Task loaded from parent loader (parentFirst)
+15:03:47.943 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.ant.ApkBuilderTask loaded from ant loader (parentFirst)
+15:03:47.943 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Object loaded from parent loader (parentFirst)
+15:03:47.944 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Throwable loaded from parent loader (parentFirst)
+15:03:47.944 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.IllegalArgumentException loaded from parent loader (parentFirst)
+15:03:47.944 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.build.SealedApkException
+15:03:47.944 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/build/SealedApkException.class
+15:03:47.945 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.Exception loaded from parent loader (parentFirst)
+15:03:47.945 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.build.SealedApkException loaded from ant loader (parentFirst)
+15:03:47.945 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.build.ApkCreationException
+15:03:47.946 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/build/ApkCreationException.class
+15:03:47.946 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.build.ApkCreationException loaded from ant loader (parentFirst)
+15:03:47.946 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.build.DuplicateFileException
+15:03:47.947 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/build/DuplicateFileException.class
+15:03:47.947 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.internal.build.SignedJarBuilder$IZipEntryFilter$ZipAbortException
+15:03:47.947 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/internal/build/SignedJarBuilder$IZipEntryFilter$ZipAbortException.class
+15:03:47.948 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.internal.build.SignedJarBuilder$IZipEntryFilter$ZipAbortException loaded from ant loader (parentFirst)
+15:03:47.948 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.build.DuplicateFileException loaded from ant loader (parentFirst)
+15:03:47.948 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.BuildException loaded from parent loader (parentFirst)
+15:03:47.948 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.io.FilenameFilter loaded from parent loader (parentFirst)
+15:03:47.949 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.regex.Pattern loaded from parent loader (parentFirst)
+15:03:47.949 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter]  +Datatype apkbuilder com.android.ant.ApkBuilderTask
+15:03:47.950 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.lang.String loaded from parent loader (parentFirst)
+15:03:47.950 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.types.Path loaded from parent loader (parentFirst)
+15:03:47.951 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.xml.AndroidXPathFactory
+15:03:47.951 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/xml/AndroidXPathFactory.class
+15:03:47.952 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.xml.AndroidXPathFactory loaded from ant loader (parentFirst)
+15:03:47.952 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class javax.xml.namespace.NamespaceContext loaded from parent loader (parentFirst)
+15:03:47.952 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class javax.xml.xpath.XPathFactory loaded from parent loader (parentFirst)
+15:03:47.953 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Finding class com.android.sdklib.xml.AndroidXPathFactory$AndroidNamespaceContext
+15:03:47.953 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Loaded from D:\Tooldev\android-sdk-windows\tools\lib\sdklib.jar com/android/sdklib/xml/AndroidXPathFactory$AndroidNamespaceContext.class
+15:03:47.953 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class com.android.sdklib.xml.AndroidXPathFactory$AndroidNamespaceContext loaded from ant loader (parentFirst)
+15:03:47.954 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.List loaded from parent loader (parentFirst)
+15:03:47.954 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class java.util.ArrayList loaded from parent loader (parentFirst)
+15:03:47.954 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class javax.xml.xpath.XPath loaded from parent loader (parentFirst)
+15:03:47.954 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.xml.sax.InputSource loaded from parent loader (parentFirst)
+15:03:47.956 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.Project loaded from parent loader (parentFirst)
+15:03:47.957 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: manifest.package -> org.example.hello
+15:03:47.960 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: tested.manifest.package -> 
+15:03:47.963 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: manifest.hasCode -> true
+15:03:47.966 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Setting project property: android.instrumentation -> 
+15:03:48.108 [WARN] [org.gradle.util.DeprecationLogger] The sourceSet.classesDir method is deprecated and will be removed in the next version of Gradle. You should use the sourceSet.output.classesDir method instead.
+15:03:48.208 [INFO] [org.gradle.api.Task] Running instrumentation tests...
+15:03:48.526 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:echo] [D:\workspace36\_github\gradlestudy\HelloAndroid\src\main\java, D:\workspace36\_github\gradlestudy\HelloAndroid\src]
+15:03:48.542 [WARN] [org.gradle.util.DeprecationLogger] The DomainObjectCollection.getAll() method is deprecated as DomainObjectCollection is now a Collection itself. Simply use the collection.
+15:03:48.542 [WARN] [org.gradle.util.DeprecationLogger] The DomainObjectCollection.findAll() method is deprecated as DomainObjectCollection is now a Collection itself. Use the matching(Spec) method.
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.settings.dir' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.basedir' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\.'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.conf.dir' to 'jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.name' to 'Java(TM) SE Runtime Environment'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.library.path' to 'C:\opt\jdk\jre\bin'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.version' to '20.2-b06'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.vendor' to 'Sun Microsystems Inc.'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url' to 'http://java.sun.com/'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'path.separator' to ';'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.name' to 'Java HotSpot(TM) Client VM'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding.pkg' to 'sun.io'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.launcher' to 'SUN_STANDARD'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.country' to 'JP'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.os.patch.level' to 'Service Pack 1'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.dir' to 'D:\workspace36\_github\gradlestudy\HelloAndroid'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.version' to '1.6.0_27-b07'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.graphicsenv' to 'sun.awt.Win32GraphicsEnvironment'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.endorsed.dirs' to 'C:\opt\jdk\jre\lib\endorsed'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.arch' to 'x86'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.io.tmpdir' to 'D:\Temp\'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'line.separator' to '
+'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'org.gradle.wrapper.properties' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\\gradle\wrapper\gradle-wrapper.properties'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.vendor' to 'Sun Microsystems Inc.'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.variant' to ''
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.name' to 'Windows 7'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.boot.library.path' to 'C:\Users\ksc\.gradle\jna'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.jnu.encoding' to 'MS932'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.library.path' to 'C:\opt\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\opt\jdk/bin;D:\ToolDev\gradle-1.0-milestone-4\bin;D:\ToolDev\Git/bin;D:\Tooldev\apache-maven-3.0.3/bin;D:\Tooldev\ant/bin;D:/Tooldev/android-sdk-windows/platform-tools;D:/Tooldev/android-sdk-windows/tools;D:\Tooldev\appengine-java-sdk-1.5.3/bin;.'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.name' to 'Java Platform API Specification'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.version' to '50.0'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.management.compiler' to 'HotSpot Client Compiler'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.version' to '6.1'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.home' to 'C:\Users\ksc'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.timezone' to 'Asia/Tokyo'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.printerjob' to 'sun.awt.windows.WPrinterJob'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding' to 'UTF-8'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.version' to '1.6'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.path' to 'D:\workspace36\_github\gradlestudy\HelloAndroid\\gradle\wrapper\gradle-wrapper.jar'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.name' to 'ksc'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.version' to '1.0'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.command' to 'org.gradle.wrapper.GradleWrapperMain clean configureDebug androidInstall --debug'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.home' to 'C:\opt\jdk\jre'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.arch.data.model' to '32'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'groovy.source.encoding' to 'UTF-8'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.language' to 'ja'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.vendor' to 'Sun Microsystems Inc.'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'awt.toolkit' to 'sun.awt.windows.WToolkit'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.info' to 'mixed mode, sharing'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.version' to '1.6.0_27'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.ext.dirs' to 'C:\opt\jdk\jre\lib\ext;C:\Windows\Sun\Java\lib\ext'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.class.path' to 'C:\opt\jdk\jre\lib\resources.jar;C:\opt\jdk\jre\lib\rt.jar;C:\opt\jdk\jre\lib\sunrsasign.jar;C:\opt\jdk\jre\lib\jsse.jar;C:\opt\jdk\jre\lib\jce.jar;C:\opt\jdk\jre\lib\charsets.jar;C:\opt\jdk\jre\lib\modules\jdk.boot.jar;C:\opt\jdk\jre\classes'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor' to 'Sun Microsystems Inc.'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.separator' to '\'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url.bug' to 'http://java.sun.com/cgi-bin/bugreport.cgi'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.endian' to 'little'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.desktop' to 'windows'
+15:03:48.604 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.isalist' to 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86'
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.cache.dir' to 'C:\Users\ksc\.gradle\caches\artifacts'
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.log.modules.in.use' to 'false'
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultSettingsConverter] Timing: Ivy convert for resolve took 0.016 secs
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.moduleconverter.ResolveModuleDescriptorConverter] Timing: Ivy convert for resolve took 0.0 secs
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.moduleconverter.PublishModuleDescriptorConverter] Timing: Ivy convert for publish took 0.0 secs
+15:03:48.620 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] :: resolving dependencies :: #HelloAndroid;x.y.z
+15:03:48.620 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	confs: [compile]
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	validate = true
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	refresh = false
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] resolving dependencies for configuration 'compile'
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies for #HelloAndroid;x.y.z [compile]
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of #HelloAndroid;x.y.z of rootConf=compile
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;x.y.z->org.twitter4j#twitter4j-core;[2.2,) [compile->default]
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of org.twitter4j#twitter4j-core;[2.2,) of rootConf=compile
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	using clientModuleChain to resolve org.twitter4j#twitter4j-core;[2.2,)
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] clientModuleChain: Checking cache for: dependency: org.twitter4j#twitter4j-core;[2.2,) {compile=[default]}
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] clientModuleChain: no namespace defined: using system
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] clientModuleChain: no latest strategy defined: using default
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] chain: Checking cache for: dependency: org.twitter4j#twitter4j-core;[2.2,) {compile=[default]}
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] chain: no namespace defined: using system
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] chain: no latest strategy defined: using default
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] MavenRepo: no namespace defined: using system
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] found resolved revision in cache: org.twitter4j#twitter4j-core;[2.2,) => [2.2,)
+15:03:48.620 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	no ivy file in cache for org.twitter4j#twitter4j-core;[2.2,): tried C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\ivy-[2.2,).xml
+15:03:48.635 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		tried http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/[revision]/twitter4j-core-[revision].pom
+15:03:49.259 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/maven-metadata.xml.sha1'
+15:03:49.493 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/maven-metadata.xml.md5'
+15:03:49.757 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	listing revisions from maven-metadata: http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/maven-metadata.xml
+15:03:50.007 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	found revs: [2.1.0, 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.5, 2.1.6, 2.1.7, 2.1.8, 2.1.9, 2.1.10, 2.1.11, 2.1.12, 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4]
+15:03:50.258 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.0/twitter4j-core-2.1.0.pom.sha1'
+15:03:50.546 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.0/twitter4j-core-2.1.0.pom.md5'
+15:03:51.045 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.1/twitter4j-core-2.1.1.pom.sha1'
+15:03:51.308 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.1/twitter4j-core-2.1.1.pom.md5'
+15:03:51.801 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.2/twitter4j-core-2.1.2.pom.sha1'
+15:03:52.046 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.2/twitter4j-core-2.1.2.pom.md5'
+15:03:52.561 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3.pom.sha1'
+15:03:52.795 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.3/twitter4j-core-2.1.3.pom.md5'
+15:03:53.294 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.4/twitter4j-core-2.1.4.pom.sha1'
+15:03:53.562 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.4/twitter4j-core-2.1.4.pom.md5'
+15:03:54.064 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.5/twitter4j-core-2.1.5.pom.sha1'
+15:03:54.310 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.5/twitter4j-core-2.1.5.pom.md5'
+15:03:54.812 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.6/twitter4j-core-2.1.6.pom.sha1'
+15:03:55.062 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.6/twitter4j-core-2.1.6.pom.md5'
+15:03:55.563 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.7/twitter4j-core-2.1.7.pom.sha1'
+15:03:55.820 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.7/twitter4j-core-2.1.7.pom.md5'
+15:03:56.321 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.8/twitter4j-core-2.1.8.pom.sha1'
+15:03:56.564 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.8/twitter4j-core-2.1.8.pom.md5'
+15:03:57.063 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.9/twitter4j-core-2.1.9.pom.sha1'
+15:03:57.312 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.9/twitter4j-core-2.1.9.pom.md5'
+15:03:57.814 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.10/twitter4j-core-2.1.10.pom.sha1'
+15:03:58.060 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.10/twitter4j-core-2.1.10.pom.md5'
+15:03:58.581 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.11/twitter4j-core-2.1.11.pom.sha1'
+15:03:58.830 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.11/twitter4j-core-2.1.11.pom.md5'
+15:03:59.330 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.12/twitter4j-core-2.1.12.pom.sha1'
+15:03:59.579 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.1.12/twitter4j-core-2.1.12.pom.md5'
+15:04:00.102 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.0/twitter4j-core-2.2.0.pom.sha1'
+15:04:00.342 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.0/twitter4j-core-2.2.0.pom.md5'
+15:04:00.847 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.1/twitter4j-core-2.2.1.pom.sha1'
+15:04:01.081 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.1/twitter4j-core-2.2.1.pom.md5'
+15:04:01.580 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.2/twitter4j-core-2.2.2.pom.sha1'
+15:04:01.839 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.2/twitter4j-core-2.2.2.pom.md5'
+15:04:02.336 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.3/twitter4j-core-2.2.3.pom.sha1'
+15:04:02.585 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.3/twitter4j-core-2.2.3.pom.md5'
+15:04:03.084 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.4/twitter4j-core-2.2.4.pom.sha1'
+15:04:03.333 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.4/twitter4j-core-2.2.4.pom.md5'
+15:04:03.630 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] MavenRepo: no latest strategy defined: using default
+15:04:03.648 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	MavenRepo: found md file for org.twitter4j#twitter4j-core;[2.2,)
+15:04:03.649 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		=> http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.4/twitter4j-core-2.2.4.pom (2.2.4)
+15:04:03.649 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	parser = pom parser
+15:04:03.652 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] No entry is found in the ModuleDescriptorCache : C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\ivy-2.2.4.xml
+15:04:03.653 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving SHA-1 using: 'file:/C:/Users/ksc/.gradle/caches/artifacts/org.twitter4j/twitter4j-core/c12498cf18507aa6433a94eb7d3e77d5/ivy-2.2.4.xml.sha1'
+15:04:03.653 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Retrieving MD5 using: 'file:/C:/Users/ksc/.gradle/caches/artifacts/org.twitter4j/twitter4j-core/c12498cf18507aa6433a94eb7d3e77d5/ivy-2.2.4.xml.md5'
+15:04:03.667 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+15:04:03.673 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	found ivy file in cache for org.twitter4j#twitter4j-core;2.2.4 (resolved by MavenRepo): C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\ivy-2.2.4.xml
+15:04:03.675 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	wharf-cache: revision in cache: org.twitter4j#twitter4j-core;2.2.4
+15:04:03.677 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	checking org.twitter4j#twitter4j-core;2.2.4 from MavenRepo against [none]
+15:04:03.677 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	module revision kept as first found: org.twitter4j#twitter4j-core;2.2.4 from MavenRepo
+15:04:03.680 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	found org.twitter4j#twitter4j-core;2.2.4 in MavenRepo
+15:04:03.681 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	[2.2.4] org.twitter4j#twitter4j-core;[2.2,)
+15:04:03.681 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;x.y.z->org.twitter4j#twitter4j-core;[2.2,) [compile->runtime]
+15:04:03.681 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of org.twitter4j#twitter4j-core;2.2.4 of rootConf=compile
+15:04:03.682 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;x.y.z->org.twitter4j#twitter4j-core;[2.2,) [compile->compile]
+15:04:03.682 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of org.twitter4j#twitter4j-core;2.2.4 of rootConf=compile
+15:04:03.682 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;x.y.z->org.twitter4j#twitter4j-core;[2.2,) [compile->master]
+15:04:03.682 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of org.twitter4j#twitter4j-core;2.2.4 of rootConf=compile
+15:04:03.683 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Nbr of module to sort : 1
+15:04:03.683 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort dependencies of : org.twitter4j#twitter4j-core;2.2.4 / Number of dependencies = 4
+15:04:03.683 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort done for : org.twitter4j#twitter4j-core;2.2.4
+15:04:03.692 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	resolved ivy file produced in C:\Users\ksc\.gradle\caches\artifacts\resolved--HelloAndroid-x.y.z.xml
+15:04:03.693 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] :: resolution report :: resolve 15073ms :: artifacts dl 0ms
+15:04:03.693 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:04:03.693 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|                  |            modules            ||   artifacts   |
+15:04:03.693 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+15:04:03.693 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:04:03.694 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|      compile     |   1   |   1   |   0   |   0   ||   0   |   0   |
+15:04:03.694 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:04:03.695 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Nbr of module to sort : 1
+15:04:03.695 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort dependencies of : org.twitter4j#twitter4j-core;2.2.4 / Number of dependencies = 4
+15:04:03.695 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort done for : org.twitter4j#twitter4j-core;2.2.4
+15:04:03.700 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	report for #HelloAndroid;x.y.z compile produced in C:\Users\ksc\.gradle\caches\artifacts\-HelloAndroid-compile.xml
+15:04:03.700 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	resolve done (15073ms resolve - 0ms download)
+15:04:03.700 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultIvyDependencyResolver] Timing: Ivy resolve took 15.08 secs
+15:04:03.701 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultIvyReportConverter] Timing: Translating report for configuration configuration ':compile' took 0.0010 secs
+15:04:03.702 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	[NOT REQUIRED] null
+15:04:03.704 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	[NOT REQUIRED] org.twitter4j#twitter4j-core;2.2.4!twitter4j-core.jar
+15:04:03.720 [DEBUG] [org.gradle.configuration.BuildScriptProcessor] Timing: Running the build script took 17.535 secs
+15:04:03.742 [INFO] [org.gradle.BuildLogger] All projects evaluated.
+15:04:03.779 [DEBUG] [org.gradle.execution.DefaultTaskGraphExecuter] Timing: Creating the DAG took 0.0030 secs
+15:04:03.779 [DEBUG] [org.gradle.execution.DefaultTaskGraphExecuter] Timing: Creating the DAG took 0.0 secs
+15:04:03.829 [DEBUG] [org.gradle.execution.DefaultTaskGraphExecuter] Timing: Creating the DAG took 0.05 secs
+15:04:03.830 [INFO] [org.gradle.initialization.DefaultGradleLauncher] Starting build for primary tasks 'clean', 'configureDebug', 'androidInstall'.
+15:04:03.830 [INFO] [org.gradle.BuildLogger] Tasks to be executed: [task ':clean', task ':configureDebug', task ':androidProcessResources', task ':compileJava', task ':processResources', task ':classes', task ':jar', task ':proguard', task ':androidPackage', task ':assemble', task ':androidInstall']
+15:04:03.835 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :clean
+15:04:03.835 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':clean'
+15:04:03.835 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':clean' is up-to-date
+15:04:03.843 [INFO] [org.gradle.api.internal.changedetection.DefaultTaskArtifactStateRepository] Executing task ':clean' due to:
+Task ':clean' has not declared any outputs.
+15:04:03.843 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] task ':clean' is not up-to-date
+15:04:03.843 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate all cached files
+15:04:03.844 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':clean'.
+15:04:03.845 [DEBUG] [org.gradle.api.internal.file.copy.DeleteActionImpl] Deleting D:\workspace36\_github\gradlestudy\HelloAndroid\build
+15:04:03.940 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':clean'
+15:04:03.940 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :configureDebug
+15:04:03.940 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':configureDebug'
+15:04:03.941 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':configureDebug' is up-to-date
+15:04:03.941 [INFO] [org.gradle.api.internal.changedetection.DefaultTaskArtifactStateRepository] Executing task ':configureDebug' due to:
+Task ':configureDebug' has not declared any outputs.
+15:04:03.941 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] task ':configureDebug' is not up-to-date
+15:04:03.941 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate all cached files
+15:04:03.941 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':configureDebug'.
+15:04:03.944 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':configureDebug'
+15:04:03.945 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :androidProcessResources
+15:04:03.945 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':androidProcessResources'
+15:04:03.945 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':androidProcessResources' is up-to-date
+15:04:03.956 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\AndroidManifest.xml'
+15:04:03.957 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\src\main\java' include '**/*.aidl'
+15:04:03.957 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\res'
+15:04:03.957 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen'
+15:04:03.967 [INFO] [org.gradle.api.internal.file.collections.DirectoryFileTree] file or directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\src\main\java', not found
+15:04:03.984 [INFO] [org.gradle.api.internal.changedetection.DefaultTaskArtifactStateRepository] Executing task ':androidProcessResources' due to:
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen for task ':androidProcessResources' has changed.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen\org\example\hello\R.java has been removed for task ':androidProcessResources'.
+15:04:03.984 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] task ':androidProcessResources' is not up-to-date
+15:04:03.984 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen'
+15:04:03.985 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':androidProcessResources'.
+15:04:03.989 [INFO] [org.gradle.api.internal.file.collections.DirectoryFileTree] file or directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\src\main\java', not found
+15:04:03.989 [INFO] [org.gradle.api.Project] Generating R.java / Manifest.java from the resources...
+15:04:04.015 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:exec] Current OS is Windows 7
+15:04:04.023 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:exec] Executing 'D:\Tooldev\android-sdk-windows\platform-tools\aapt.exe' with arguments:
+'package'
+'-m'
+'-J'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen'
+'-M'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\AndroidManifest.xml'
+'-S'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\res'
+'-I'
+'D:\Tooldev\android-sdk-windows\platforms\android-4\android.jar'
+
+The ' characters around the executable and arguments are
+not part of the command.
+15:04:04.023 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Execute:Java13CommandLauncher: Executing 'D:\Tooldev\android-sdk-windows\platform-tools\aapt.exe' with arguments:
+'package'
+'-m'
+'-J'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen'
+'-M'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\AndroidManifest.xml'
+'-S'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\res'
+'-I'
+'D:\Tooldev\android-sdk-windows\platforms\android-4\android.jar'
+
+The ' characters around the executable and arguments are
+not part of the command.
+15:04:04.482 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen'
+15:04:04.501 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':androidProcessResources'
+15:04:04.501 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :compileJava
+15:04:04.501 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':compileJava'
+15:04:04.515 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':compileJava' is up-to-date
+15:04:04.523 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for configuration ':compile'
+15:04:04.524 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\Tooldev\android-sdk-windows\platforms\android-4\android.jar'
+15:04:04.524 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen'
+15:04:04.524 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\src'
+15:04:04.524 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main'
+15:04:04.525 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\dependency-cache'
+15:04:04.540 [INFO] [org.gradle.api.internal.changedetection.DefaultTaskArtifactStateRepository] Executing task ':compileJava' due to:
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main for task ':compileJava' has changed.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\dependency-cache for task ':compileJava' has changed.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main\org\example\hello\R$string.class has been removed for task ':compileJava'.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main\org\example\hello\R$layout.class has been removed for task ':compileJava'.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main\org\example\hello\Hello.class has been removed for task ':compileJava'.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main\org\example\hello\R$drawable.class has been removed for task ':compileJava'.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main\org\example\hello\R$attr.class has been removed for task ':compileJava'.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main\org\example\hello\R.class has been removed for task ':compileJava'.
+15:04:04.540 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] task ':compileJava' is not up-to-date
+15:04:04.540 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main'
+15:04:04.541 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\dependency-cache'
+15:04:04.541 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':compileJava'.
+15:04:04.557 [DEBUG] [org.gradle.api.internal.tasks.compile.AntJavaCompiler] Add C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\jars\twitter4j-core-2.2.4.jar to Ant classpath!
+15:04:04.557 [DEBUG] [org.gradle.api.internal.tasks.compile.AntJavaCompiler] Add D:\Tooldev\android-sdk-windows\platforms\android-4\android.jar to Ant classpath!
+15:04:04.617 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] parsing buildfile jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ant-1.8.2.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/C:/Users/ksc/.gradle/wrapper/dists/gradle-1.0-milestone-4/lib/ant-1.8.2.jar!/org/apache/tools/ant/antlib.xml from a zip file
+15:04:04.617 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Adding reference: compile.classpath
+15:04:04.664 [DEBUG] [org.gradle.api.internal.tasks.compile.AntJavaCompiler] Running ant javac with the following options {includeAntRuntime=false, destdir=D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main, classpathref=compile.classpath, sourcepath=, target=1.5, source=1.5, failonerror=true, verbose=false, listfiles=false, deprecation=false, nowarn=false, encoding=UTF-8, optimize=false, debug=true, fork=false, includeJavaRuntime=false, bootclasspath=D:\Tooldev\android-sdk-windows\platforms\android-4\android.jar}
+15:04:04.727 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.taskdefs.condition.Or loaded from parent loader (parentFirst)
+15:04:04.727 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.types.resources.selectors.Or loaded from parent loader (parentFirst)
+15:04:04.727 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.taskdefs.condition.And loaded from parent loader (parentFirst)
+15:04:04.727 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Class org.apache.tools.ant.types.resources.selectors.And loaded from parent loader (parentFirst)
+15:04:04.727 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] fileset: Setup scanner in dir D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen with patternSet{ includes: [] excludes: [] }
+15:04:04.742 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:javac] org\example\hello\R.java added as org\example\hello\R.class doesn't exist.
+15:04:04.742 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] fileset: Setup scanner in dir D:\workspace36\_github\gradlestudy\HelloAndroid\src with patternSet{ includes: [] excludes: [] }
+15:04:04.742 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:javac] org\example\hello\Hello.java added as org\example\hello\Hello.class doesn't exist.
+15:04:04.742 [INFO] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:javac] Compiling 2 source files to D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main
+15:04:04.742 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:javac] Using modern compiler
+15:04:04.742 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:javac] Compilation arguments:
+'-d'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main'
+'-classpath'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main;C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\jars\twitter4j-core-2.2.4.jar;D:\Tooldev\android-sdk-windows\platforms\android-4\android.jar'
+'-target'
+'1.5'
+'-bootclasspath'
+'D:\Tooldev\android-sdk-windows\platforms\android-4\android.jar'
+'-encoding'
+'UTF-8'
+'-g'
+'-source'
+'1.5'
+
+The ' characters around the executable and arguments are
+not part of the command.
+15:04:04.742 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:javac] Files to be compiled:
+    D:\workspace36\_github\gradlestudy\HelloAndroid\build\gen\org\example\hello\R.java
+    D:\workspace36\_github\gradlestudy\HelloAndroid\src\org\example\hello\Hello.java
+15:04:05.241 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main'
+15:04:05.241 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\dependency-cache'
+15:04:05.257 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':compileJava'
+15:04:05.257 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :processResources
+15:04:05.257 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':processResources'
+15:04:05.257 [INFO] [org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter] Skipping task ':processResources' as it has no source files.
+15:04:05.257 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':processResources'
+15:04:05.257 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :processResources UP-TO-DATE
+15:04:05.257 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :classes
+15:04:05.257 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':classes'
+15:04:05.257 [INFO] [org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter] Skipping task ':classes' as it has no actions.
+15:04:05.257 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':classes'
+15:04:05.257 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :jar
+15:04:05.257 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':jar'
+15:04:05.273 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':jar' is up-to-date
+15:04:05.273 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file tree
+15:04:05.273 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main'
+15:04:05.273 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for ZIP 'C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\jars\twitter4j-core-2.2.4.jar'
+15:04:05.273 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\HelloAndroid-x.y.z-debug.jar'
+15:04:06.177 [INFO] [org.gradle.api.internal.changedetection.DefaultTaskArtifactStateRepository] Executing task ':jar' due to:
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\HelloAndroid-x.y.z-debug.jar for task ':jar' has changed.
+Output file D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\HelloAndroid-x.y.z-debug.jar has been removed for task ':jar'.
+15:04:06.177 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] task ':jar' is not up-to-date
+15:04:06.178 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\HelloAndroid-x.y.z-debug.jar'
+15:04:06.178 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':jar'.
+15:04:06.496 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\HelloAndroid-x.y.z-debug.jar'
+15:04:06.519 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':jar'
+15:04:06.519 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :proguard
+15:04:06.519 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':proguard'
+15:04:06.520 [INFO] [org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter] Skipping task ':proguard' as task onlyIf is false.
+15:04:06.520 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':proguard'
+15:04:06.520 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :proguard SKIPPED
+15:04:06.521 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :androidPackage
+15:04:06.521 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':androidPackage'
+15:04:06.528 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':androidPackage' is up-to-date
+15:04:06.534 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\res'
+15:04:06.534 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\libs'
+15:04:06.535 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\AndroidManifest.xml'
+15:04:06.535 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\classes\main' exclude '**/*.class'
+15:04:06.535 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\HelloAndroid-x.y.z-debug.jar'
+15:04:06.537 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\distributions\HelloAndroid-x.y.z-debug.apk'
+15:04:06.547 [INFO] [org.gradle.api.internal.changedetection.DefaultTaskArtifactStateRepository] Executing task ':androidPackage' due to:
+Output file history is not available for task ':androidPackage'.
+15:04:06.547 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] task ':androidPackage' is not up-to-date
+15:04:06.549 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file 'D:\workspace36\_github\gradlestudy\HelloAndroid\build\distributions\HelloAndroid-x.y.z-debug.apk'
+15:04:06.550 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':androidPackage'.
+15:04:06.557 [INFO] [org.gradle.api.Task] Converting compiled files and external libraries into D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\classes.dex...
+15:04:06.574 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultSettingsConverter] Timing: Ivy convert for resolve took 0.0 secs
+15:04:06.574 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.moduleconverter.ResolveModuleDescriptorConverter] Timing: Ivy convert for resolve took 0.0 secs
+15:04:06.575 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.moduleconverter.PublishModuleDescriptorConverter] Timing: Ivy convert for publish took 0.0010 secs
+15:04:06.575 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] :: resolving dependencies :: #HelloAndroid;x.y.z
+15:04:06.575 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	confs: [runtime]
+15:04:06.576 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	validate = true
+15:04:06.576 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	refresh = false
+15:04:06.576 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] resolving dependencies for configuration 'runtime'
+15:04:06.576 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies for #HelloAndroid;x.y.z [runtime]
+15:04:06.576 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of #HelloAndroid;x.y.z of rootConf=runtime
+15:04:06.577 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies for #HelloAndroid;x.y.z [compile]
+15:04:06.577 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of #HelloAndroid;x.y.z of rootConf=runtime
+15:04:06.577 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;x.y.z->org.twitter4j#twitter4j-core;[2.2,) [compile->default]
+15:04:06.577 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of org.twitter4j#twitter4j-core;[2.2,) of rootConf=runtime
+15:04:06.577 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	using clientModuleChain to resolve org.twitter4j#twitter4j-core;[2.2,)
+15:04:06.577 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] clientModuleChain: Checking cache for: dependency: org.twitter4j#twitter4j-core;[2.2,) {compile=[default]}
+15:04:06.578 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] chain: Checking cache for: dependency: org.twitter4j#twitter4j-core;[2.2,) {compile=[default]}
+15:04:06.579 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] found resolved revision in cache: org.twitter4j#twitter4j-core;[2.2,) => [2.2,)
+15:04:06.581 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	no ivy file in cache for org.twitter4j#twitter4j-core;[2.2,): tried C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\ivy-[2.2,).xml
+15:04:06.582 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		tried http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/[revision]/twitter4j-core-[revision].pom
+15:04:06.582 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	listing revisions from maven-metadata: http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/maven-metadata.xml
+15:04:06.806 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	found revs: [2.1.0, 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.5, 2.1.6, 2.1.7, 2.1.8, 2.1.9, 2.1.10, 2.1.11, 2.1.12, 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4]
+15:04:06.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	MavenRepo: found md file for org.twitter4j#twitter4j-core;[2.2,)
+15:04:06.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 		=> http://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/2.2.4/twitter4j-core-2.2.4.pom (2.2.4)
+15:04:06.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	parser = pom parser
+15:04:06.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Entry is found in the ModuleDescriptorCache : C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\ivy-2.2.4.xml
+15:04:06.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	found ivy file in cache for org.twitter4j#twitter4j-core;2.2.4 (resolved by MavenRepo): C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\ivy-2.2.4.xml
+15:04:06.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	wharf-cache: revision in cache: org.twitter4j#twitter4j-core;2.2.4
+15:04:06.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	checking org.twitter4j#twitter4j-core;2.2.4 from MavenRepo against [none]
+15:04:06.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	module revision kept as first found: org.twitter4j#twitter4j-core;2.2.4 from MavenRepo
+15:04:06.822 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	found org.twitter4j#twitter4j-core;2.2.4 in MavenRepo
+15:04:06.822 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	[2.2.4] org.twitter4j#twitter4j-core;[2.2,)
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;x.y.z->org.twitter4j#twitter4j-core;[2.2,) [compile->runtime]
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of org.twitter4j#twitter4j-core;2.2.4 of rootConf=runtime
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;x.y.z->org.twitter4j#twitter4j-core;[2.2,) [compile->compile]
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of org.twitter4j#twitter4j-core;2.2.4 of rootConf=runtime
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] == resolving dependencies #HelloAndroid;x.y.z->org.twitter4j#twitter4j-core;[2.2,) [compile->master]
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] loadData of org.twitter4j#twitter4j-core;2.2.4 of rootConf=runtime
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Nbr of module to sort : 1
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort dependencies of : org.twitter4j#twitter4j-core;2.2.4 / Number of dependencies = 4
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort done for : org.twitter4j#twitter4j-core;2.2.4
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	resolved ivy file produced in C:\Users\ksc\.gradle\caches\artifacts\resolved--HelloAndroid-x.y.z.xml
+15:04:06.837 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] :: resolution report :: resolve 262ms :: artifacts dl 0ms
+15:04:06.837 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:04:06.837 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|                  |            modules            ||   artifacts   |
+15:04:06.837 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+15:04:06.837 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:04:06.837 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	|      runtime     |   1   |   1   |   0   |   0   ||   0   |   0   |
+15:04:06.837 [INFO] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	---------------------------------------------------------------------
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Nbr of module to sort : 1
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort dependencies of : org.twitter4j#twitter4j-core;2.2.4 / Number of dependencies = 4
+15:04:06.837 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] Sort done for : org.twitter4j#twitter4j-core;2.2.4
+15:04:06.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	report for #HelloAndroid;x.y.z runtime produced in C:\Users\ksc\.gradle\caches\artifacts\-HelloAndroid-runtime.xml
+15:04:06.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	resolve done (262ms resolve - 0ms download)
+15:04:06.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultIvyDependencyResolver] Timing: Ivy resolve took 0.278 secs
+15:04:06.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.DefaultIvyReportConverter] Timing: Translating report for configuration configuration ':runtime' took 0.0 secs
+15:04:06.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	[NOT REQUIRED] null
+15:04:06.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] 	[NOT REQUIRED] org.twitter4j#twitter4j-core;2.2.4!twitter4j-core.jar
+15:04:06.869 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] Current OS is Windows 7
+15:04:06.869 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] fileset: Setup scanner in dir D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs with patternSet{ includes: [HelloAndroid-x.y.z-debug.jar] excludes: [] }
+15:04:06.869 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] fileset: Setup scanner in dir C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\jars with patternSet{ includes: [twitter4j-core-2.2.4.jar] excludes: [] }
+15:04:06.869 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] Executing 'D:\Tooldev\android-sdk-windows\platform-tools\dx.bat' with arguments:
+'--dex'
+'--output=D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\classes.dex'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\HelloAndroid-x.y.z-debug.jar'
+'C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\jars\twitter4j-core-2.2.4.jar'
+
+The ' characters around the executable and arguments are
+not part of the command.
+15:04:06.869 [DEBUG] [org.gradle.api.internal.project.ant.AntLoggingAdapter] Execute:Java13CommandLauncher: Executing 'D:\Tooldev\android-sdk-windows\platform-tools\dx.bat' with arguments:
+'--dex'
+'--output=D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\classes.dex'
+'D:\workspace36\_github\gradlestudy\HelloAndroid\build\libs\HelloAndroid-x.y.z-debug.jar'
+'C:\Users\ksc\.gradle\caches\artifacts\org.twitter4j\twitter4j-core\c12498cf18507aa6433a94eb7d3e77d5\jars\twitter4j-core-2.2.4.jar'
+
+The ' characters around the executable and arguments are
+not part of the command.
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] UNEXPECTED TOP-LEVEL EXCEPTION:
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] java.lang.IllegalArgumentException: already added: Ltwitter4j/AccountSettings;
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.dex.file.ClassDefsSection.add(ClassDefsSection.java:123)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.dex.file.DexFile.add(DexFile.java:143)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.dexer.Main.processClass(Main.java:372)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.dexer.Main.processFileBytes(Main.java:346)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.dexer.Main.access$400(Main.java:59)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:294)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:244)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:130)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:108)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.dexer.Main.processOne(Main.java:313)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:233)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.dexer.Main.run(Main.java:185)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.dexer.Main.main(Main.java:166)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 	at com.android.dx.command.Main.main(Main.java:90)
+15:04:09.199 [WARN] [org.gradle.api.internal.project.ant.AntLoggingAdapter] [ant:apply] 1 error; aborting
+15:04:09.620 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':androidPackage'
+15:04:09.620 [ERROR] [org.gradle.BuildExceptionReporter] 
+15:04:09.620 [ERROR] [org.gradle.BuildExceptionReporter] FAILURE: Build failed with an exception.
+15:04:09.620 [ERROR] [org.gradle.BuildExceptionReporter] 
+15:04:09.620 [ERROR] [org.gradle.BuildExceptionReporter] * What went wrong:
+15:04:09.620 [ERROR] [org.gradle.BuildExceptionReporter] Execution failed for task ':androidPackage'.
+15:04:09.667 [ERROR] [org.gradle.BuildExceptionReporter] Cause: apply returned: 1
+15:04:09.668 [ERROR] [org.gradle.BuildExceptionReporter] 
+15:04:09.668 [ERROR] [org.gradle.BuildExceptionReporter] * Exception is:
+15:04:09.669 [ERROR] [org.gradle.BuildExceptionReporter] org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':androidPackage'.
+15:04:09.669 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:71)
+15:04:09.669 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:48)
+15:04:09.670 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:34)
+15:04:09.670 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:55)
+15:04:09.670 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:57)
+15:04:09.671 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:41)
+15:04:09.671 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+15:04:09.671 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:52)
+15:04:09.672 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:42)
+15:04:09.672 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.AbstractTask.execute(AbstractTask.java:237)
+15:04:09.672 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.execution.DefaultTaskGraphExecuter.executeTask(DefaultTaskGraphExecuter.java:167)
+15:04:09.672 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.execution.DefaultTaskGraphExecuter.doExecute(DefaultTaskGraphExecuter.java:160)
+15:04:09.673 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.execution.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:78)
+15:04:09.673 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.execution.TaskNameResolvingBuildExecuter.execute(TaskNameResolvingBuildExecuter.java:113)
+15:04:09.673 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.execution.DelegatingBuildExecuter.execute(DelegatingBuildExecuter.java:54)
+15:04:09.673 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+15:04:09.673 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:109)
+15:04:09.674 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:77)
+15:04:09.674 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.RunBuildAction.execute(RunBuildAction.java:41)
+15:04:09.674 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.RunBuildAction.execute(RunBuildAction.java:27)
+15:04:09.674 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.ExceptionReportingAction.execute(ExceptionReportingAction.java:32)
+15:04:09.675 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.ExceptionReportingAction.execute(ExceptionReportingAction.java:21)
+15:04:09.675 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.CommandLineActionFactory$WithLoggingAction.execute(CommandLineActionFactory.java:219)
+15:04:09.675 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.CommandLineActionFactory$WithLoggingAction.execute(CommandLineActionFactory.java:203)
+15:04:09.675 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.Main.execute(Main.java:55)
+15:04:09.676 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.Main.main(Main.java:40)
+15:04:09.676 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.ProcessBootstrap.runNoExit(ProcessBootstrap.java:49)
+15:04:09.676 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.ProcessBootstrap.run(ProcessBootstrap.java:31)
+15:04:09.676 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:24)
+15:04:09.676 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:37)
+15:04:09.677 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.wrapper.Wrapper.execute(Wrapper.java:64)
+15:04:09.677 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:42)
+15:04:09.677 [ERROR] [org.gradle.BuildExceptionReporter] Caused by: : apply returned: 1
+15:04:09.677 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.apache.tools.ant.taskdefs.ExecTask.runExecute(ExecTask.java:646)
+15:04:09.678 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.apache.tools.ant.taskdefs.ExecuteOn.runParallel(ExecuteOn.java:716)
+15:04:09.678 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.apache.tools.ant.taskdefs.ExecuteOn.runExec(ExecuteOn.java:479)
+15:04:09.678 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.apache.tools.ant.taskdefs.ExecTask.execute(ExecTask.java:498)
+15:04:09.678 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+15:04:09.679 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+15:04:09.679 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.project.ant.BasicAntBuilder.nodeCompleted(BasicAntBuilder.java:71)
+15:04:09.679 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.project.ant.BasicAntBuilder.doInvokeMethod(BasicAntBuilder.java:86)
+15:04:09.679 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.project.DefaultAntBuilder.super$3$invokeMethod(DefaultAntBuilder.groovy)
+15:04:09.679 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.project.DefaultAntBuilder.invokeMethod(DefaultAntBuilder.groovy:37)
+15:04:09.680 [ERROR] [org.gradle.BuildExceptionReporter] 	at com.jvoegele.gradle.tasks.android.AndroidPackageTask.createPackage(AndroidPackageTask.groovy:111)
+15:04:09.680 [ERROR] [org.gradle.BuildExceptionReporter] 	at com.jvoegele.gradle.tasks.android.AndroidPackageTask.this$5$createPackage(AndroidPackageTask.groovy)
+15:04:09.680 [ERROR] [org.gradle.BuildExceptionReporter] 	at com.jvoegele.gradle.tasks.android.AndroidPackageTask$this$5$createPackage.callCurrent(Unknown Source)
+15:04:09.680 [ERROR] [org.gradle.BuildExceptionReporter] 	at com.jvoegele.gradle.tasks.android.AndroidPackageTask.process(AndroidPackageTask.groovy:66)
+15:04:09.681 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:158)
+15:04:09.681 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:93)
+15:04:09.681 [ERROR] [org.gradle.BuildExceptionReporter] 	at com.jvoegele.gradle.tasks.android.AndroidPackageTask_Decorated.invokeMethod(Unknown Source)
+15:04:09.681 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.util.ReflectionUtil.invoke(ReflectionUtil.groovy:23)
+15:04:09.682 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$2.execute(AnnotationProcessingTaskFactory.java:129)
+15:04:09.682 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$2.execute(AnnotationProcessingTaskFactory.java:127)
+15:04:09.682 [ERROR] [org.gradle.BuildExceptionReporter] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:63)
+15:04:09.682 [ERROR] [org.gradle.BuildExceptionReporter] 	... 31 more
+15:04:09.682 [ERROR] [org.gradle.BuildExceptionReporter] 
+15:04:09.683 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+15:04:09.683 [LIFECYCLE] [org.gradle.BuildResultLogger] BUILD FAILED
+15:04:09.683 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+15:04:09.684 [LIFECYCLE] [org.gradle.BuildResultLogger] Total time: 24.755 secs

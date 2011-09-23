@@ -1,10 +1,5 @@
-call ../setEnvGG.bat
+call ..\setEnvGG.bat
 
-::set GRADLE_OPTS="-Xms1024m -Xmx1024m"
-::set JAVA_OPTS="-Xms1024m -Xmx1024m"
-
-call gradle clean
-::call gradle androidPackage
-::call gradle configureDebug assemble
-call gradle configureDebug androidInstall
-::call gradle androidInstall
+set JAVA_HOME=C:\opt\jdk
+gradlew clean configureDebug androidInstall
+::gradlew clean configureDebug androidInstall --debug > hogehoge.txt 2>&1

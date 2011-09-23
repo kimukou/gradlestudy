@@ -2,7 +2,7 @@ apply plugin: 'android'
 apply plugin: 'project-report'
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-3'
+    gradleVersion = '1.0-milestone-4'
 }
 
 buildscript {
@@ -11,29 +11,30 @@ buildscript {
     }
     dependencies {
         classpath 'com.jvoegele.gradle.plugins:android-plugin:1.0.0'
+        //classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.7'
     }
 }
 
 repositories {
-    flatDir(dirs: file("$projectDir/libs"))
-		//mavenRepo urls:'http://twitter4j.org/maven2'
+    //flatDir(dirs: file("$projectDir/libs"))
+
     mavenCentral()
+    mavenRepo urls: 'http://twitter4j.org/maven2'
 }
 
 
 dependencies {
-    //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.8.2'
+    //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.7.10'
     compile group:'org.twitter4j', name:'twitter4j-core', version:'[2.2,)'
-    //compile group:'org.twitter4j', name:'twitter4j-core', version:'[2.1.)'
     //compile group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
     //runtime group:'org.twitter4j', name:'twitter4j-core', version:'2.1.8-SNAPSHOT'
 }
 
 
-// プロジェクトのバージョンを設定
+// version of a project is set up.
 version = "x.y.z"
 
-//ソース位置
+//Source position 
 def jdkVersion = 1.5
 def enc = 'UTF-8'
 sourceCompatibility = jdkVersion
@@ -59,17 +60,17 @@ task hoge{
 */
 
 
-// 署名設定
+// Signature setup 
 androidPackage {
     //keyStore = System.getProperty('user.home')+"/.android/debug.keystore"
     keyStore = "${projectDir}/debug.keystore"
     keyAlias = 'androiddebugkey'
-    // パスワードが設定されてなければ、コマンド・プロンプトで入力を求められる
+    // If the password is not set up, it can ask for an input by a command prompt.
     keyStorePassword = "android"
     keyAliasPassword = "android"
 }
 
-// プロジェクトのプロパティをリソースのフィルタリング（プロパティの解決）に使うヨ
+// using the property of a project to filtering (solution of a property) of a resource
 processResources {
     expand (project.properties)
 }
@@ -79,12 +80,12 @@ jar {
     from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
-// デバッグ・ビルド設定
+// Debug build setup 
 task configureDebug << {
     jar.classifier = "debug"
 }
 
-// リリース・ビルド設定
+// Release build setup 
 task configureRelease << {
     proguard.enabled = true
 }
