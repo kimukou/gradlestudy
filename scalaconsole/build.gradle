@@ -17,7 +17,7 @@ dependencies {
     runtime  "org.scala-lang:scala-library:$scalaVersion"
     runtime  "org.scala-lang:scala-swing:$scalaVersion"
     runtime  'org.apache.ivy:ivy:2.2.0'
-		runtime  "org.scalaconsole:ScalaConsole:2.9.1-1.4.3"
+    runtime  "org.scalaconsole:ScalaConsole:2.9.1-1.4.3"
 } 
 
 
@@ -29,7 +29,7 @@ task console(type: JavaExec, dependsOn: classes){
 
 
 
-
+//fat jar execute 
 jar {
     from configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) }
 }
