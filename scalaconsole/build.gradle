@@ -1,38 +1,37 @@
 defaultTasks 'console'
 
-apply plugin: 'groovy'
+apply plugin: 'java'
 
-def jdkVersion = 1.6
-def enc = 'UTF-8'
-sourceCompatibility = jdkVersion
-targetCompatibility = jdkVersion
-[compileJava, compileGroovy, compileTestJava, compileTestGroovy].each{ it.options.encoding = enc }
-[compileGroovy, compileTestGroovy].each{ it.groovyOptions.encoding = enc }
+version = ""
+archivesBaseName = "scalaconsole-all"
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-4'
+repositories {
+    flatDir name: 'localRepository', dirs: 'lib' 
+    mavenCentral()
+    //mavenRepo urls:'http://repository.codehaus.org'
 }
 
-buildscript {
-    repositories {
-        flatDir(dirs: file("$rootDir/lib"))
-        mavenCentral()
-        mavenRepo urls:'http://repository.codehaus.org'
-    }
-    dependencies {
-        def scalaVersion = '2.9.1'
-        classpath "org.scala-lang:scala-compiler:$scalaVersion"
-        classpath "org.scala-lang:scala-library:$scalaVersion"
-        classpath "org.scala-lang:scala-swing:$scalaVersion"
-        classpath('org.codehaus.groovy.modules:groovytransforms:0.2') { transitive = false }
+dependencies { 
+    def scalaVersion = '2.9.1'
+    runtime  "org.scala-lang:scala-compiler:$scalaVersion"
+    runtime  "org.scala-lang:scala-library:$scalaVersion"
+    runtime  "org.scala-lang:scala-swing:$scalaVersion"
+    runtime  'org.apache.ivy:ivy:2.2.0'
+		runtime  "org.scalaconsole:ScalaConsole:2.9.1-1.4.3"
+} 
 
-        //groovy 'org.codehaus.groovy:groovy:[1.8,)'
-        classpath 'org.apache.ivy:ivy:[2.2,)'
-        classpath 'org.scalaconsole:ScalaConsole:2.9.1-1.4.3'
-    }
+
+task console(type: JavaExec, dependsOn: classes){
+  main = 'org.scalaconsole.ScalaConsole'
+  args = "$projectDir".split().toList()
+  classpath configurations.runtime
 }
 
-task console{
-    org.scalaconsole.ScalaConsole.main(["$projectDir"] as String[])
+
+
+
+jar {
+    from configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
+manifest.mainAttributes("Main-Class" : "org.scalaconsole.ScalaConsole")
