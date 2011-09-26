@@ -1,5 +1,2 @@
-call ../setEnvGG.bat
-
-::call gradle
+set JAVA_HOME=c:\opt\jdk
 call gradlew %*
-
