@@ -12,6 +12,5 @@ set JAVA_OPTS=-Dgroovy.source.encoding=UTF-8 -Dfile.encoding=UTF-8
 ::gradlew chromeTest
 ::gradlew clean chromeTest
 ::gradlew -Dtest.single=GoogleSpec clean chromeTest
-
-gradlew -Dtest=src/test/groovy/GoogleSpec.groovy clean chromeTest
+gradlew -DchromeTest.single=GoogleTest clean chromeTest
 
