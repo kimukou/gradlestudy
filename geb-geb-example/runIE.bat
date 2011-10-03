@@ -1,4 +1,4 @@
-::call setEnvG9.bat
+::call ../setEnvGG.bat
 ::gradle ieTest
 
 set JAVA_HOME=c:\opt\jdk

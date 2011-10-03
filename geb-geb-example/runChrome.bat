@@ -1,4 +1,4 @@
-::call setEnvG9.bat
+::call ../setEnvGG.bat
 ::gradle chromeTest
 
 ::taskkill /F /IM chromedriver.exe
