@@ -72,26 +72,23 @@ dependencies {
 }
 
 
+println gradle.startParameter.taskNames
+
+// android only java Test
+if("androidTest" in gradle.startParameter.taskNames){
+    sourceSets.test.groovy.srcDirs=[]
+		println "===android==="
+}
+else{
+    sourceSets.test.java.srcDirs=[]
+}
+
+
+
 drivers.add "opera" //opera
 drivers.add "safari" //safari
 drivers.each { driver ->
   task "${driver}Test"(type: Test) {
-
-/*
-    // android only java Test
-    if(driver=="android"){
-      doFirst{
-        sourceSets.test.java.srcDir 'src/main/java'
-        sourceSets.test.groovy.srcDirs=[]
-      }
-    }
-    else{
-      doFirst{
-        sourceSets.test.java.srcDirs=[]
-        sourceSets.test.groovy.srcDir 'src/main/groovy'
-      }
-    }
-*/
 
     testReportDir = file("$reportsDir/$name/tests")
     testResultsDir = file("$buildDir/test-results/$name")
