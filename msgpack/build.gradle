@@ -25,6 +25,7 @@ buildscript {
 
 
 repositories {
+    flatDir(dirs: file("$projectDir/lib"))
     mavenCentral()
 /*
     mavenRepo urls: [ //"http://msgpack.org/maven2/",
@@ -38,15 +39,15 @@ repositories {
 dependencies {
     groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.8.2'
     groovy group: 'commons-cli', name : 'commons-cli', version: '1.2'
-    groovy group: 'org.msgpack', name: 'msgpack', version: '0.6.1'
+    //groovy group: 'org.msgpack', name: 'msgpack', version: '0.6.1'
+    groovy group: 'org.msgpack', name: 'msgpack', version: '0.6.2-SNAPSHOT'
 
-/*
         //see http://search.maven.org/remotecontent?filepath=org/msgpack/msgpack/0.6.1/msgpack-0.6.1.pom
         groovy 'com.googlecode.json-simple:json-simple:1.1'
         groovy 'org.slf4j:slf4j-api:1.6.1'
         groovy 'org.slf4j:slf4j-log4j12:1.6.1'
         groovy 'org.javassist:javassist:3.15.0-GA'
-*/
+
         testCompile 'junit:junit:4.8.2'
 }
 
