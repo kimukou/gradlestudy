@@ -8,6 +8,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.ie.InternetExplorerDriver
+import org.openqa.selenium.android.AndroidDriver
 
 import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.remote.RemoteWebDriver
@@ -82,6 +83,14 @@ environments {
 			//new InternetExplorerDriver().navigate().to("http://google.com/ncr")
 			//new RemoteWebDriver(new URL("http://google.com/ncr"),DesiredCapabilities.internetExplorer())
 		}
+	}
+	
+	// see http://code.google.com/p/selenium/wiki/AndroidDriver
+	//
+	//		issue http://code.google.com/p/selenium/issues/detail?id=1005
+	//
+	android{
+		driver = { new AndroidDriver() }
 	}
 
 	opera {

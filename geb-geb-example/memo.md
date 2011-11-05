@@ -28,6 +28,13 @@ Windows
 	ChromePortableはライセンス的に再配布は難しいみたい(Google Chrome自体が)
 	＜Google系のソフトは再配布は基本認めていないよう
 
+	ChromePortableカスタマイズ)
+		ChromiumPortable\App\AppInfo\Launcher
+		ChromiumPortable.ini
+
+#CommandLineArguments=--disk-cache-dir="%Temp%\Cache"
+CommandLineArguments=--enable-extensions --disk-cache-dir="PortableGoogleChrome\Cache" --app=file:///../startup/startup.html --start-maximized
+
 
 OperaDriver
 	ここからコンパイル
@@ -49,3 +56,4 @@ SafariDriver
 AndroidDriver
 	課題系
 		http://code.google.com/p/selenium/wiki/AndroidDriver
+

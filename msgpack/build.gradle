@@ -10,7 +10,7 @@ targetCompatibility = jdkVersion
 [compileGroovy, compileTestGroovy].each{ it.groovyOptions.encoding = enc }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-3'
+    gradleVersion = '1.0-milestone-4'
 }
 
 buildscript {
@@ -19,29 +19,36 @@ buildscript {
         mavenRepo urls:'http://msgpack.org/maven2/'
     }
     dependencies {
-        classpath("org.msgpack:msgpack:0.5.2-devel")
+        classpath("org.msgpack:msgpack:0.6.1")
     }
 }
 
 
 repositories {
+    flatDir(dirs: file("$projectDir/lib"))
     mavenCentral()
-    mavenRepo urls: [ "http://msgpack.org/maven2/",
+/*
+    mavenRepo urls: [ //"http://msgpack.org/maven2/",
                       "http://download.java.net/maven/2/",
                       "http://repository.jboss.org/maven2/",
-                      "http://repository.jboss.org/nexus/content/groups/public-jboss/"]
+                      "http://repository.jboss.org/nexus/content/groups/public-jboss/"
+                    ]
+*/
 }
 
 dependencies {
-    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.8.0'
+    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.8.3'
     groovy group: 'commons-cli', name : 'commons-cli', version: '1.2'
-    groovy group: 'org.msgpack', name: 'msgpack', version: '0.5.2-devel'
+    //groovy group: 'org.msgpack', name: 'msgpack', version: '0.6.1'
+    groovy group: 'org.msgpack', name: 'msgpack', version: '0.6.2-SNAPSHOT'
 
-        //■need 1.5.1 upper place into http://repository.jboss.org/maven2/
-        groovy 'org.slf4j:slf4j-api:1.5.8'
-        groovy 'org.slf4j:slf4j-log4j12:1.5.8'
-        groovy 'javassist:javassist:3.12.1.GA'
-        testCompile 'junit:junit:4.8.1'
+        //see http://search.maven.org/remotecontent?filepath=org/msgpack/msgpack/0.6.1/msgpack-0.6.1.pom
+        groovy 'com.googlecode.json-simple:json-simple:1.1'
+        groovy 'org.slf4j:slf4j-api:1.6.1'
+        groovy 'org.slf4j:slf4j-log4j12:1.6.1'
+        groovy 'org.javassist:javassist:3.15.0-GA'
+
+        testCompile 'junit:junit:4.8.2'
 }
 
 /*
@@ -65,26 +72,38 @@ sourceSets {
 //
 
 import org.msgpack.MessagePack
-import static org.msgpack.Templates.*
+//import static org.msgpack.Templates.*
+import static org.msgpack.template.Templates.*;
+
+import org.msgpack.type.Value;
+import org.msgpack.unpacker.Converter;
 
 task msgpacktest2 {
-        // シリアライズするオブジェクトを作成
+    // シリアライズするオブジェクトを作成
     List<String> src = new ArrayList()
     src.add("msgpack")
     src.add("kumofs")
     src.add("viver")
 
+    MessagePack msgpack = new MessagePack()
+
     // バイト列にシリアライズ
-    byte[] raw = MessagePack.pack(src)
-        println "raw=$raw"
+    //byte[] raw = MessagePack.pack(src)
+    byte[] raw = msgpack.write(src)
+    println "raw=$raw"
 
     // 方法1: テンプレートを指定して直接デシリアライズ
-    List<String> dst1 = (List<String>)MessagePack.unpack(raw, tList(TString))
+    //List<String> dst1 = (List<String>)MessagePack.unpack(raw, tList(TString))
+    List<String> dst1 = msgpack.read(raw, tList(TString))
+    println "dst1=${dst1.dump()}"
 
     // 方法2: いったん動的型付けオブジェクトにデシリアライズしてから型変換
-    def  dynamic = MessagePack.unpack(raw)
-    List<String> dst2 = (List<String>)dynamic.convert(tList(TString))
-        println "dst2=${dst2.dump()}"
+    //def  dynamic = MessagePack.unpack(raw)
+    //List<String> dst2 = (List<String>)dynamic.convert(tList(TString))
+    Value dynamic = msgpack.read(raw);
+    List<String> dst2 = new Converter(dynamic).read(tList(TString));
+
+    println "dst2=${dst2.dump()}"
 }
 
 
