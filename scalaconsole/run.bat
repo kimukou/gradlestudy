@@ -1,5 +1,5 @@
 call ../setEnvGG.bat
 
 ::call gradle
-call gradlew %*
+call gradlew clean console %*
 
