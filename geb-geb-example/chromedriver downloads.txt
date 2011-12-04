@@ -1,0 +1,2 @@
+For the binary needed by the chrome driver, please visit the download page of
+the chromium project at http://chromium.googlecode.com/

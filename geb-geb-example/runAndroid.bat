@@ -7,7 +7,7 @@ start emulator -avd my_android  -no-audio -no-boot-anim
 echo "waiting emurator rised..."
 pause 
 
-adb -e install -r  apk\android-server-2.6.0.apk
+adb -e install -r  apk\android-server-2.13.0.apk
 
 ::
 :: apk start

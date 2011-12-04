@@ -8,7 +8,7 @@ targetCompatibility = jdkVersion
 [compileGroovy, compileTestGroovy].each{ it.groovyOptions.encoding = enc }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = '1.0-milestone-4'
+  gradleVersion = '1.0-milestone-6'
 }
 
 
@@ -30,12 +30,12 @@ def drivers = ["htmlunit", "firefox", "chrome","ie","android"]
 
 dependencies {
   //groovy "org.codehaus.groovy:groovy-all:1.7.10"
-  groovy "org.codehaus.groovy:groovy-all:1.8.2"
+  groovy "org.codehaus.groovy:groovy-all:1.8.4"
   
   def gebVersion = "0.6.0"
   def seleniumVersion = "latest.release"//"2.0rc3"//"2.3.1"
   def seleniumVersionIE = "latest.release"//"2.0.0"
-  def seleniumVersionAndroid = "2.6.0"
+  def seleniumVersionAndroid = "2.13.0"
   
   // If using Spock, need to depend on geb-spock
   testCompile "org.codehaus.geb:geb-spock:$gebVersion"
@@ -62,7 +62,7 @@ dependencies {
     }
   }
 //opera setting 
-  testCompile("com.opera:operadriver:0.7.4-SNAPSHOT"){ 
+  testCompile("com.opera:operadriver:0.8.2-SNAPSHOT"){ 
     transitive = true
     exclude module:'xml-apis' 
   }
