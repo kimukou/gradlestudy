@@ -10,7 +10,7 @@ targetCompatibility = jdkVersion
 [compileGroovy, compileTestGroovy].each{ it.groovyOptions.encoding = enc }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-6'
+    gradleVersion = '1.0-milestone-7'
 }
 
 buildscript {
@@ -19,7 +19,7 @@ buildscript {
         mavenRepo urls:'http://msgpack.org/maven2/'
     }
     dependencies {
-        classpath("org.msgpack:msgpack:0.6.3")
+        classpath("org.msgpack:msgpack:0.6.4")
     }
 }
 
@@ -37,11 +37,11 @@ repositories {
 }
 
 dependencies {
-    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.8.4'
+    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.8.5'
     groovy group: 'commons-cli', name : 'commons-cli', version: '1.2'
-    groovy group: 'org.msgpack', name: 'msgpack', version: '0.6.3'
+    groovy group: 'org.msgpack', name: 'msgpack', version: '0.6.4'
 
-        //see http://search.maven.org/remotecontent?filepath=org/msgpack/msgpack/0.6.3/msgpack-0.6.3.pom
+        //see http://search.maven.org/remotecontent?filepath=org/msgpack/msgpack/0.6.4/msgpack-0.6.4.pom
         groovy 'com.googlecode.json-simple:json-simple:1.1'
         groovy 'org.slf4j:slf4j-api:1.6.1'
         groovy 'org.slf4j:slf4j-log4j12:1.6.1'

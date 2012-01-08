@@ -13,7 +13,7 @@ import org.openqa.selenium.android.AndroidDriver
 import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.remote.RemoteWebDriver
 import com.opera.core.systems.OperaDriver
-import com.opera.core.systems.settings.OperaDriverSettings
+//import com.opera.core.systems.settings.OperaDriverSettings
 // Use htmlunit as the default
 
 import com.thoughtworks.selenium.DefaultSelenium
@@ -115,7 +115,7 @@ environments {
 
 			def operaCapabilities = OperaDriver.getDefaultCapabilities()
 			operaCapabilities.setCapability(OperaDriver.LAUNCHER ,"exe/launcher/launcher-win32-i86pc.exe")
-			operaCapabilities.setCapability(OperaDriver.BINARY  ,"d:/ToolDev/Opera/opera.exe")
+			operaCapabilities.setCapability(OperaDriver.BINARY  ,"d:\\ToolDev/Opera/opera.exe")
 			operaCapabilities.setCapability(OperaDriver.ARGUMENTS ,"-nowindow -someothervalue")
 			//operaCapabilities.setCapability(OperaDriver.OPERAIDLE ,true)
 			//operaCapabilities.setCapability(OperaDriver.DISPLAY  ,8)
