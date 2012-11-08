@@ -8,7 +8,7 @@ targetCompatibility = jdkVersion
 [compileGroovy, compileTestGroovy].each{ it.groovyOptions.encoding = enc }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = '1.0-milestone-7'
+  gradleVersion = '1.2'
 }
 
 
@@ -17,6 +17,8 @@ repositories {
   mavenCentral()
   mavenRepo(url:"https://nexus.codehaus.org/content/repositories/snapshots")
 }
+
+
 
 configurations {
   testCompile.transitive = true
@@ -27,17 +29,17 @@ def drivers = ["htmlunit", "firefox", "chrome","ie","android"]
 
 dependencies {
   //groovy "org.codehaus.groovy:groovy-all:1.7.10"
-  groovy "org.codehaus.groovy:groovy-all:1.8.5"
+  groovy "org.codehaus.groovy:groovy-all:1.8.8"
   
-  def gebVersion = "0.6.2"
+  def gebVersion = "0.7.2"
   def seleniumVersion = "latest.release"//"2.0rc3"//"2.3.1"
   def seleniumVersionIE = "latest.release"//"2.0.0"
-  def seleniumVersionAndroid = "2.16"
+  def seleniumVersionAndroid = "2.21.0"
   
   // If using Spock, need to depend on geb-spock
   testCompile "org.codehaus.geb:geb-spock:$gebVersion"
   //testCompile "org.spockframework:spock-core:0.5-groovy-1.7"
-  testCompile "org.spockframework:spock-core:0.5-groovy-1.8"
+  testCompile "org.spockframework:spock-core:0.6-groovy-1.8"
   
   // If using JUnit, need to depend on geb-junit (3 or 4)
   testCompile "org.codehaus.geb:geb-junit4:$gebVersion"
@@ -79,6 +81,7 @@ if("androidTest" in gradle.startParameter.taskNames){
 else{
     sourceSets.test.java.srcDirs=[]
 }
+
 
 
 

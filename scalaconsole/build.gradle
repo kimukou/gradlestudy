@@ -12,12 +12,14 @@ repositories {
 }
 
 dependencies { 
-    def scalaVersion = '2.9.1'
+    //def scalaVersion = '2.9.1'
+    def scalaVersion = '2.9.2'
     runtime  "org.scala-lang:scala-compiler:$scalaVersion"
     runtime  "org.scala-lang:scala-library:$scalaVersion"
     runtime  "org.scala-lang:scala-swing:$scalaVersion"
     runtime  'org.apache.ivy:ivy:2.2.0'
-    runtime  "org.scalaconsole:ScalaConsole:2.9.1-1.4.3"
+    //runtime  "org.scalaconsole:ScalaConsole:2.9.1-1.4.3"
+    runtime  "org.scalaconsole:ScalaConsole:2.9.2-1.5.RC4Special"
 } 
 
 
