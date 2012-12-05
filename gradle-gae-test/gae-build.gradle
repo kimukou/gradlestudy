@@ -3,6 +3,7 @@ apply plugin: 'gae'
 
 //see https://github.com/bmuschko/gradle-gae-plugin/tree/v0.4
 
+/*
 buildscript {
     repositories {
         flatDir(dirs: file("${APPENGINE_SDK_DIR}/lib"))
@@ -18,6 +19,21 @@ buildscript {
         classpath ':appengine-tools-api:'
         classpath ':gradle-gae-plugin:0.5.1'
     }
+}
+*/
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.7.6'
+    }
+}
+
+dependencies {
+    gaeSdk 'com.google.appengine:appengine-java-sdk:1.6.6'
 }
 
 gae {

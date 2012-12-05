@@ -2,6 +2,7 @@
 */bin
 */build
 */gen
+*/.DS_Store
 discobot/runtest/bin/classes
 discobot/runtest/bin/classes/*
 discobot/runtest/bin/classes.dex
