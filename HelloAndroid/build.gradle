@@ -2,7 +2,7 @@ apply plugin: 'android'
 apply plugin: 'project-report'
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-4'
+    gradleVersion = '1.3'
 }
 
 buildscript {
@@ -10,7 +10,8 @@ buildscript {
         mavenRepo(urls: 'http://jvoegele.com/maven2/')
     }
     dependencies {
-        classpath 'com.jvoegele.gradle.plugins:android-plugin:1.0.0'
+        classpath 'org.gradle.api.plugins:gradle-android-plugin:1.2.1'
+		//classpath 'com.jvoegele.gradle.plugins:android-plugin:1.0.0'
         //classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.7'
     }
 }

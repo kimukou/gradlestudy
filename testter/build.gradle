@@ -3,13 +3,14 @@ buildscript {
         mavenRepo(urls: 'http://jvoegele.com/maven2/')
     }
     dependencies {
-        classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.7'
+		classpath 'org.gradle.api.plugins:gradle-android-plugin:1.2.1'
+        //classpath 'com.jvoegele.gradle.plugins:android-plugin:0.9.7'
     }
 }
 apply plugin: 'android'
 repositories {
     flatDir(dirs: file("$rootDir/libs"))
-    //mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
