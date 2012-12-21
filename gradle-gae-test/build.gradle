@@ -1,5 +1,3 @@
-import org.apache.ivy.plugins.resolver.URLResolver
-
 apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'gae'
@@ -12,64 +10,50 @@ sourceCompatibility = compatibilityVersion
 targetCompatibility = compatibilityVersion
 
 buildscript {
-    gitHub = {
-        def resolver = new URLResolver()
-
-        resolver.with {
-            name = 'GitHub'
-            addArtifactPattern 'http://cloud.github.com/downloads/[organisation]/[module]/[module]-[revision].[ext]'
-        }
-
-        resolver
-    }
-
     repositories {
-        add gitHub()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'bmuschko:gradle-gae-plugin:0.5.1'
-        classpath 'bmuschko:gradle-gaelyk-plugin:0.1'
+        classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.8'
+        classpath 'org.gradle.api.plugins:gradle-gaelyk-plugin:0.4'
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.1.1'
     }
 }
 
 repositories {
     mavenCentral()
-    add gitHub()
-}
-
-sourceSets {
-    main {
-        classesDir = file('war/WEB-INF/classes')
-    }
 }
 
 dependencies {
-    def gaeVersion = '1.5.4'
-    groovy 'org.codehaus.groovy:groovy-all:1.8.2'
+    def gaeVersion = '1.7.3'
+    groovy 'org.codehaus.groovy:groovy-all:1.8.6'
     compile "com.google.appengine:appengine-api-1.0-sdk:$gaeVersion",
             "com.google.appengine:appengine-api-labs:$gaeVersion",
-            'glaforge:gaelyk:1.0'
-
-    testCompile 'org.spockframework:spock-core:0.5-groovy-1.8', {
-        exclude group: 'org.codehaus.groovy', name: 'groovy-all'
-    }
-    testCompile 'marcoVermeulen:gaelyk-spock:0.1',
-                "com.google.appengine:appengine-api-stubs:$gaeVersion",
-                "com.google.appengine:appengine-testing:$gaeVersion",
-                'javax.servlet:servlet-api:2.5',
-                'cglib:cglib-nodep:2.2',
-                'org.objenesis:objenesis:1.2'
+            'org.codehaus.groovy:groovy-all:1.8.6'
+    compile 'org.gaelyk:gaelyk:1.2'
+    
+    /** 
+     * To add binary plugin just declare it as a dependency. For example,
+     * uncomment following to add GPars support to your Gaelyk project.
+     * @see https://github.com/musketyr/gpars-appengine
+     */ 
+    // compile 'org.codehaus.gpars:gpars-appengine:0.1'
+    
+    testCompile 'org.gaelyk:gaelyk-spock:0.3.0.1'
+    testCompile "com.google.appengine:appengine-api-stubs:$gaeVersion",
+                "com.google.appengine:appengine-testing:$gaeVersion"
+                
+    functionalTestCompile 'org.codehaus.geb:geb-spock:0.7.0',
+                          'org.seleniumhq.selenium:selenium-firefox-driver:2.20.0'
     gaeSdk "com.google.appengine:appengine-java-sdk:$gaeVersion"
 }
 
-webAppDirName = file('war')
-
 gae {
-//add start kimukou.buzz
     httpPort = 9090
-
-    appcfg {
+	optimizeWar = true
+	
+	appcfg {
         email = E_MAIL
         passIn = true
         //passIn = false
@@ -77,65 +61,81 @@ gae {
 
         logs {
             severity = 1
-            outputFile = new File("mylogs.txt")
+            outputFile = new File('mylogs.txt')
+        }
+		app {
+            id = 'gradle-gae-test'
         }
     }
-//add end kimukou.buzz
+	jvmFlags = ['-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000']
 
-    warDir = file('war')
+	
     downloadSdk = true
+    warDir = file('src/main/webapp/')
+    optimizeWar = true
+}
+sourceSets.main.output.classesDir = 'src/main/webapp/WEB-INF/classes' //◎Add
+
+
+gaeExplodeWar.dependsOn gaelykPrecompileGroovlet
+gaeExplodeWar.dependsOn gaelykPrecompileTemplate
+
+clean {
+     delete sourceSets*.output.classesDir
 }
 
-clean.doLast {
-     delete sourceSets*.classesDir
-}
-
-task copyRuntimeLibraries {
-    def webAppLibDirName = 'war/WEB-INF/lib'
+task copyRuntimeLibraries(type: Sync) {
+    def webAppLibDirName = 'src/main/webapp/WEB-INF/lib'
     description = "Copies runtime libraries to $webAppLibDirName."
+    from configurations.runtime
+    into webAppLibDirName
+}
 
-    copy {
-        into webAppLibDirName
-        from configurations.runtime.files
+gaeRun.dependsOn copyRuntimeLibraries
+
+idea {
+    project {
+        jdkName = compatibilityVersion
+
+        ipr.withXml { provider ->
+            def node = provider.asNode()
+
+            // Set Gradle home
+            def gradleSettings = node.appendNode('component', [name: 'GradleSettings'])
+            gradleSettings.appendNode('option', [name: 'SDK_HOME', value: gradle.gradleHomeDir])
+        }
     }
 }
 
-ideaProject {
-    javaVersion = compatibilityVersion
-
-    withXml { provider ->
-        def node = provider.asNode()
-
-        // Set Gradle home
-        def gradleSettings = node.appendNode('component', [name: 'GradleSettings'])
-        gradleSettings.appendNode('option', [name: 'SDK_HOME', value: gradle.gradleHomeDir])
+eclipse {
+    project {
+        name 'gaelyk-project'
+        file {
+            whenMerged { project ->
+                project.natures << 'com.google.appengine.eclipse.core.gaeNature'
+                project.natures << 'com.google.gdt.eclipse.core.webAppNature'
+                project.buildCommands << [name: 'com.google.appengine.eclipse.core.enhancerbuilder']
+                project.buildCommands << [name: 'com.google.appengine.eclipse.core.projectValidator']
+                project.buildCommands << [name: 'com.google.gdt.eclipse.core.webAppProjectValidator']
+            }
+        }
     }
-}
-
-eclipseProject {
-    projectName = 'gaelyk-project'
-
-    whenConfigured { project ->
-        project.natures << 'com.google.appengine.eclipse.core.gaeNature'
-        project.natures << 'com.google.gdt.eclipse.core.webAppNature'
-        project.buildCommands << [name: 'com.google.appengine.eclipse.core.enhancerbuilder']
-        project.buildCommands << [name: 'com.google.appengine.eclipse.core.projectValidator']
-        project.buildCommands << [name: 'com.google.gdt.eclipse.core.webAppProjectValidator']
-    }
-}
-
-eclipseClasspath {
-    withXml { xml ->
-        xml.asNode().classpathentry.find { it.@kind == 'output' && it.@path == 'bin' }.@path = 'war/WEB-INF/classes'
-        xml.asNode().appendNode('classpathentry', [kind: 'con', path: 'com.google.appengine.eclipse.core.GAE_CONTAINER'])
-                    .appendNode('attributes')
-                    .appendNode('attribute', [name: 'org.eclipse.jst.component.nondependency', value: '/war/WEB-INF/lib'])
-        xml.asNode().appendNode('classpathentry', [exported: 'true', kind: 'con', path: 'GROOVY_SUPPORT'])
-                    .appendNode('attributes')
-                    .appendNode('attribute', [name: 'org.eclipse.jst.component.nondependency', value: '/war/WEB-INF/lib'])
+    classpath {
+        file {
+            withXml { xml ->
+                xml.asNode().classpathentry.find { it.@kind == 'output' && it.@path == 'bin' }.@path = 'src/main/webapp/WEB-INF/classes'
+                xml.asNode().appendNode('classpathentry', [kind: 'con', path: 'com.google.appengine.eclipse.core.GAE_CONTAINER'])
+                            .appendNode('attributes')
+                            .appendNode('attribute', [name: 'org.eclipse.jst.component.nondependency', value: '/src/main/webapp/WEB-INF/lib'])
+                xml.asNode().appendNode('classpathentry', [exported: 'true', kind: 'con', path: 'GROOVY_SUPPORT'])
+                            .appendNode('attributes')
+                            .appendNode('attribute', [name: 'org.eclipse.jst.component.nondependency', value: '/src/main/webapp/WEB-INF/lib'])
+            }
+        }
     }
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-4'
+    gradleVersion '1.3'
 }
+

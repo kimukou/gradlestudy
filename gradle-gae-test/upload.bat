@@ -5,4 +5,4 @@ call ../setEnvGG.bat
 set APPENGINE_OPTION=--email=kimukou.buzz@gmail.com
 
 
-%APPENGINE_HOME%/bin/appcfg.cmd %APPENGINE_OPTION% update war
+%APPENGINE_HOME%/bin/appcfg.cmd %APPENGINE_OPTION% update src/main/webapp
